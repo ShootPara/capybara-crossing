@@ -1,0 +1,18 @@
+# Keep the production archive and local configuration off GitHub.
+/*
+!/.gitignore
+!/README.md
+!/.github/
+!/game/
+!/release/
+!/production/
+/release/*
+!/release/A1.json
+!/release/A2.json
+!/release/B1.json
+!/release/B2.json
+!/release/C1.json
+!/release/C2.json
+/production/*
+!/production/AUDIO-CUE-SHEET.json
+!/production/AUDIO-CUE-SHEET.md

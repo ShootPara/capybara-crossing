@@ -1,0 +1,1989 @@
+{
+  "kind": "capybara.chapter",
+  "mode": "release",
+  "schemaVersion": 1,
+  "campaignVersion": 1,
+  "chapter": {
+    "id": "C2",
+    "titlePTBR": "Águas ao luar",
+    "order": 6,
+    "targetCrossings": 4,
+    "targetExercises": 18,
+    "bgmCueId": "loop.c2",
+    "crossings": [
+      {
+        "id": "C2-01",
+        "ordinal": 45,
+        "titlePTBR": "O passeio da boia luminosa",
+        "missionEN": "Pipa checks the lights on her inner tube before rolling across to the star blankets.",
+        "storyboardPath": "C2 - Moonwater/storyboards/C2-01.svg",
+        "travelerId": "traveler.c2-01",
+        "routeId": "route.c2-01",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c2-01",
+        "gatheringId": "gathering.c2",
+        "seatAnchorId": "gathering.c2.seat.01",
+        "setupEN": "Pipa waits at the launch wearing an inner tube with four clip lights. Lights 1 and 2 are on; lights 3 and 4 are off.",
+        "setupAccessibleEN": "Pipa waits at the launch wearing an inner tube with four clip lights. Lights 1 and 2 are on; lights 3 and 4 are off.",
+        "initialFacts": {
+          "evidenceVisible": false,
+          "evidenceStage": "two",
+          "light1On": true,
+          "light2On": true,
+          "light3On": false,
+          "light4On": false,
+          "litCount": 2,
+          "beforeCount": 2,
+          "initialRead": false,
+          "changeRead": false,
+          "canLeave": false
+        },
+        "factDomains": {
+          "evidenceVisible": [
+            false,
+            true
+          ],
+          "light1On": [
+            true
+          ],
+          "light2On": [
+            true
+          ],
+          "light3On": [
+            false,
+            true
+          ],
+          "light4On": [
+            false,
+            true
+          ],
+          "initialRead": [
+            false,
+            true
+          ],
+          "changeRead": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "evidenceStage": [
+            "two",
+            "two-to-three",
+            "three-to-four"
+          ],
+          "litCount": [
+            2,
+            3,
+            4
+          ],
+          "beforeCount": [
+            2,
+            3
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [
+            "launch",
+            "landing"
+          ],
+          "audioCueIds": [
+            "loop.c2"
+          ]
+        },
+        "slots": [
+          {
+            "id": "C2-01.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C2-01-P2",
+            "objectiveId": "scope.partial-set",
+            "kind": "meaning_choice",
+            "goalEN": "Interpret partial-set descriptions and the scope of negation.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "initialRead": false,
+              "litCount": 2,
+              "light3On": false,
+              "light4On": false
+            },
+            "onEnter": {
+              "evidenceVisible": true,
+              "evidenceStage": "two"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "initialRead": true
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-01.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-01-P2"
+                },
+                "noveltyEN": "Describe a mixed set without confusing some with none or all.",
+                "vocabulary": [
+                  {
+                    "term": "not all",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "clip light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-01.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "initialRead": false,
+                      "litCount": 2,
+                      "light3On": false,
+                      "light4On": false,
+                      "evidenceVisible": true,
+                      "evidenceStage": "two",
+                      "light1On": true,
+                      "light2On": true
+                    },
+                    "captionEN": "Pipa’s inner tube has four numbered clip lights. Lights 1 and 2 are on; lights 3 and 4 are off. Pipa is still at the launch.",
+                    "accessibleEN": "Pipa’s inner tube has four numbered clip lights. Lights 1 and 2 are on; lights 3 and 4 are off. Pipa is still at the launch.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.ring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line describes both the lit and dark parts of the ring?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Two lights are on, but not all four.",
+                    "whyEN": "Two clips glow and two remain dark."
+                  },
+                  {
+                    "id": "distractor1",
+                    "textEN": "None of the four lights are on.",
+                    "whyEN": "None means zero, but two are on."
+                  },
+                  {
+                    "id": "distractor2",
+                    "textEN": "All four lights are on.",
+                    "whyEN": "All four excludes the two dark clips."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Confira as luzes acesas e as apagadas antes de escolher.",
+                "retryPTBR": "Confira cada clipe nos momentos mostrados e releia a frase inteira.",
+                "responseEN": "Pipa acknowledges the two lit clips. No light changes until the next slot begins.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-01.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-01-P2"
+                },
+                "noveltyEN": "Interpret negation over every, distinguishing not every from no.",
+                "vocabulary": [
+                  {
+                    "term": "not every",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "clip light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-01.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "initialRead": false,
+                      "litCount": 2,
+                      "light3On": false,
+                      "light4On": false,
+                      "evidenceVisible": true,
+                      "evidenceStage": "two",
+                      "light1On": true,
+                      "light2On": true
+                    },
+                    "captionEN": "Pipa’s inner tube has four numbered clip lights. Lights 1 and 2 are on; lights 3 and 4 are off. Pipa is still at the launch.",
+                    "accessibleEN": "Pipa’s inner tube has four numbered clip lights. Lights 1 and 2 are on; lights 3 and 4 are off. Pipa is still at the launch.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.ring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which statement matches the ring?",
+                "choices": [
+                  {
+                    "id": "distractor1",
+                    "textEN": "Every light is off.",
+                    "whyEN": "This ignores the two lit clips."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Not every light is off.",
+                    "whyEN": "Two lights are on, so it is false that every light is off."
+                  },
+                  {
+                    "id": "distractor2",
+                    "textEN": "No light is off.",
+                    "whyEN": "No light is off means all are on, but two are off."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Leia com cuidado o alcance da negação e confira os quatro clipes.",
+                "retryPTBR": "Confira cada clipe nos momentos mostrados e releia a frase inteira.",
+                "responseEN": "Pipa acknowledges the two lit clips. No light changes until the next slot begins.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-01.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C2-01-P3",
+            "objectiveId": "scope.exact-increment",
+            "kind": "meaning_choice",
+            "goalEN": "Describe exactly one additional lit clip from a visible before/after change.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "initialRead": true,
+              "changeRead": false,
+              "litCount": 2,
+              "light3On": false,
+              "light4On": false
+            },
+            "onEnter": {
+              "evidenceStage": "two-to-three",
+              "beforeCount": 2,
+              "litCount": 3,
+              "light3On": true
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "changeRead": true
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-01.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-01-P3"
+                },
+                "noveltyEN": "Distinguish a one-light increase from the current total or a decrease.",
+                "vocabulary": [
+                  {
+                    "term": "one more",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "clip light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-01.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "initialRead": true,
+                      "changeRead": false,
+                      "litCount": 3,
+                      "light3On": true,
+                      "light4On": false,
+                      "evidenceStage": "two-to-three",
+                      "beforeCount": 2,
+                      "evidenceVisible": true,
+                      "light1On": true,
+                      "light2On": true
+                    },
+                    "captionEN": "Before: lights 1 and 2 were on; 3 and 4 were off. Pipa switches light 3 on. Now: 1, 2 and 3 are on; 4 is off. The other lights do not change.",
+                    "accessibleEN": "Before: lights 1 and 2 were on; 3 and 4 were off. Pipa switches light 3 on. Now: 1, 2 and 3 are on; 4 is off. The other lights do not change.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.ring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "What changed when Pipa used the switch?",
+                "choices": [
+                  {
+                    "id": "distractor1",
+                    "textEN": "Every light came on.",
+                    "whyEN": "Light 4 stayed off, and lights 1 and 2 were already on."
+                  },
+                  {
+                    "id": "distractor2",
+                    "textEN": "One light went out.",
+                    "whyEN": "No light changed from on to off."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Exactly one more light came on.",
+                    "whyEN": "Only light 3 changed from off to on; the lit total rose from two to three."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare os mesmos clipes antes e depois, não apenas o total de agora.",
+                "retryPTBR": "Confira cada clipe nos momentos mostrados e releia a frase inteira.",
+                "responseEN": "Keep lights 1, 2 and 3 on and light 4 off. Pipa finishes comparing the two views.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-01.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C2-01-P4",
+            "objectiveId": "scope.truth-change",
+            "kind": "meaning_choice",
+            "goalEN": "Distinguish statements that change truth from those true or false at both times.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "changeRead": true,
+              "litCount": 3,
+              "light3On": true,
+              "light4On": false
+            },
+            "onEnter": {
+              "evidenceStage": "three-to-four",
+              "beforeCount": 3,
+              "litCount": 4,
+              "light4On": true
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "evidenceVisible": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-01.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-01-P4"
+                },
+                "noveltyEN": "Select a newly true statement, rejecting a statement true at both times.",
+                "vocabulary": [
+                  {
+                    "term": "at least one",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "clip light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-01.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "changeRead": true,
+                      "litCount": 4,
+                      "light3On": true,
+                      "light4On": true,
+                      "evidenceStage": "three-to-four",
+                      "beforeCount": 3,
+                      "evidenceVisible": true,
+                      "light1On": true,
+                      "light2On": true
+                    },
+                    "captionEN": "Before this last switch: lights 1, 2 and 3 were on; 4 was off. Pipa switches light 4 on. Now: 1, 2, 3 and 4 are on. The other lights do not change. Pipa has not crossed yet.",
+                    "accessibleEN": "Before this last switch: lights 1, 2 and 3 were on; 4 was off. Pipa switches light 4 on. Now: 1, 2, 3 and 4 are on. The other lights do not change. Pipa has not crossed yet.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.ring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which statement is true now but was false just before the last switch?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "All four lights are on.",
+                    "whyEN": "The last switch changed the total from three to four, making all true for the first time."
+                  },
+                  {
+                    "id": "distractor1",
+                    "textEN": "At least one light is on.",
+                    "whyEN": "This is true now, but it was already true when three lights were on."
+                  },
+                  {
+                    "id": "distractor2",
+                    "textEN": "Two lights are off.",
+                    "whyEN": "No lights are off now; only one was off just before this switch."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "A frase precisa valer agora e não valer no instante anterior.",
+                "retryPTBR": "Confira cada clipe nos momentos mostrados e releia a frase inteira.",
+                "responseEN": "Close the comparison view while all four physical lights stay on. Pipa spins across in her inner tube, parks by the star blankets and joins the Moonwater gathering. Commit reward.c2-01 once at logical landing.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-01.s3.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-01-P4"
+                },
+                "noveltyEN": "Track a statement that becomes false, rather than only reading the final state.",
+                "vocabulary": [
+                  {
+                    "term": "not all",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "clip light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-01.s3.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "changeRead": true,
+                      "litCount": 4,
+                      "light3On": true,
+                      "light4On": true,
+                      "evidenceStage": "three-to-four",
+                      "beforeCount": 3,
+                      "evidenceVisible": true,
+                      "light1On": true,
+                      "light2On": true
+                    },
+                    "captionEN": "Before this last switch: lights 1, 2 and 3 were on; 4 was off. Pipa switches light 4 on. Now: 1, 2, 3 and 4 are on. The other lights do not change. Pipa has not crossed yet.",
+                    "accessibleEN": "Before this last switch: lights 1, 2 and 3 were on; 4 was off. Pipa switches light 4 on. Now: 1, 2, 3 and 4 are on. The other lights do not change. Pipa has not crossed yet.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.ring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which statement was true just before the last switch but is false now?",
+                "choices": [
+                  {
+                    "id": "distractor1",
+                    "textEN": "At least one light is on.",
+                    "whyEN": "At least one is true at both times, so it did not become false."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Not all four lights are on.",
+                    "whyEN": "With three on, not all was true; with four on, it is false."
+                  },
+                  {
+                    "id": "distractor2",
+                    "textEN": "None of the four lights are on.",
+                    "whyEN": "None was false at both times; there were already three lit clips."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare a frase nos dois momentos: ela deixou de valer depois da mudança?",
+                "retryPTBR": "Confira cada clipe nos momentos mostrados e releia a frase inteira.",
+                "responseEN": "Close the comparison view while all four physical lights stay on. Pipa spins across in her inner tube, parks by the star blankets and joins the Moonwater gathering. Commit reward.c2-01 once at logical landing.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C2-02",
+        "ordinal": 46,
+        "titlePTBR": "O trenó arco-íris",
+        "missionEN": "Bento rolls up in a rainbow sail sled. The dock has a star flag and a moon flag.",
+        "storyboardPath": "C2 - Moonwater/storyboards/C2-02.svg",
+        "travelerId": "traveler.c2-02",
+        "routeId": "route.c2-02",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c2-02",
+        "gatheringId": "gathering.c2",
+        "seatAnchorId": "gathering.c2.seat.02",
+        "setupEN": "Bento waits at the near dock in one rainbow sail sled. A star flag and a moon flag are available beside a card: You need a star flag. The moon flag is optional.",
+        "setupAccessibleEN": "Bento waits at the near dock in one rainbow sail sled. A star flag and a moon flag are available beside a card: You need a star flag. The moon flag is optional.",
+        "initialFacts": {
+          "ruleReviewed": false,
+          "starPacked": false,
+          "packingReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "rule"
+        },
+        "factDomains": {
+          "ruleReviewed": [
+            false,
+            true
+          ],
+          "starPacked": [
+            false,
+            true
+          ],
+          "packingReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "rule",
+            "packing",
+            "choice"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C2-02.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C2-02-P2",
+            "objectiveId": "scope.required-star-optional-moon",
+            "kind": "meaning_choice",
+            "goalEN": "Distinguish the required flag from an optional addition.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "ruleReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "rule"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "ruleReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-02.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-02-P2"
+                },
+                "noveltyEN": "Genuine meaning contrast: need identifies the required star; optional leaves the moon choice open.",
+                "vocabulary": [
+                  {
+                    "term": "need",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "optional",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-02.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "rule"
+                    },
+                    "captionEN": "A star flag and a moon flag stand beside a card reading: You need a star flag. The moon flag is optional. Bento waits in his sled at the dock with neither flag packed.",
+                    "accessibleEN": "A star flag and a moon flag stand beside a card reading: You need a star flag. The moon flag is optional. Bento waits in his sled at the dock with neither flag packed.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.flag-choice.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "What does the card let Bento do?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Take the star flag and leave the moon flag.",
+                    "whyEN": "The star is needed. The moon may be taken or left."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Take the moon flag and leave the star flag.",
+                    "whyEN": "The moon is optional, but the star is still needed."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Confira qual bandeira é necessária e qual fica por sua escolha.",
+                "retryPTBR": "Compare cada opção com a bandeira exigida pelo cartão.",
+                "responseEN": "Close the rule card. Bento remains at the dock; neither flag has yet been packed.",
+                "confirmPTBR": "Você identificou a bandeira necessária e a opcional.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-02.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-02-P2"
+                },
+                "noveltyEN": "Genuine meaning contrast: optional permits adding the moon while keeping the required star.",
+                "vocabulary": [
+                  {
+                    "term": "need",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "optional",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-02.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "rule"
+                    },
+                    "captionEN": "A star flag and a moon flag stand beside a card reading: You need a star flag. The moon flag is optional. Bento waits in his sled at the dock with neither flag packed.",
+                    "accessibleEN": "A star flag and a moon flag stand beside a card reading: You need a star flag. The moon flag is optional. Bento waits in his sled at the dock with neither flag packed.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.flag-choice.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which packing choice is also allowed by the card?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Leave both flags on the dock.",
+                    "whyEN": "The star is still needed, so Bento cannot leave both flags."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Take both the star flag and the moon flag.",
+                    "whyEN": "The moon is optional, so Bento may take it with the star."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Confira qual bandeira é necessária e qual fica por sua escolha.",
+                "retryPTBR": "Confira se cada opção mantém a bandeira exigida e respeita o que é opcional.",
+                "responseEN": "Close the rule card. Bento remains at the dock; neither flag has yet been packed.",
+                "confirmPTBR": "Você percebeu que a bandeira da lua pode acompanhar a estrela.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-02.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C2-02-P3",
+            "objectiveId": "scope.star-satisfies-rule",
+            "kind": "meaning_choice",
+            "goalEN": "Check the packed star against the actual requirement.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "ruleReviewed": true,
+              "starPacked": false
+            },
+            "onEnter": {
+              "starPacked": true,
+              "inspectionOpen": true,
+              "inspectionStage": "packing"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "packingReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-02.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-02-P3"
+                },
+                "noveltyEN": "Genuine meaning contrast: having the required star is enough; the moon remains optional.",
+                "vocabulary": [
+                  {
+                    "term": "need",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "optional",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-02.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": true,
+                      "starPacked": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "packing"
+                    },
+                    "captionEN": "The star flag is clipped to the sled sail. The moon flag stands on the dock. The card reads: You need a star flag. The moon flag is optional. Bento remains at the dock.",
+                    "accessibleEN": "The star flag is clipped to the sled sail. The moon flag stands on the dock. The card reads: You need a star flag. The moon flag is optional. Bento remains at the dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.flag-choice.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Bento packed only the star flag. What's true?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Bento has the flag he needs.",
+                    "whyEN": "The star is the flag Bento needs."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Bento still needs the moon flag.",
+                    "whyEN": "The moon is optional, so Bento does not need it."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Confira a bandeira na vela e compare com a regra do cartão.",
+                "retryPTBR": "Compare a bandeira na vela com a que o cartão exige.",
+                "responseEN": "Close the packing card. The star flag stays clipped to the sail and the moon stays on the dock; Bento has not crossed.",
+                "confirmPTBR": "Você conferiu a bandeira na vela com a regra do cartão.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-02.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C2-02-P4",
+            "objectiveId": "scope.optional-not-forbidden",
+            "kind": "meaning_choice",
+            "goalEN": "Report the chosen omission without inventing a prohibition.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "packingReviewed": true,
+              "starPacked": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "choice"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-02.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-02-P4"
+                },
+                "noveltyEN": "Genuine meaning contrast: chose reports a decision; optional does not make leaving the moon mandatory.",
+                "vocabulary": [
+                  {
+                    "term": "chose to",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "had to",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-02.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "packingReviewed": true,
+                      "starPacked": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "choice"
+                    },
+                    "captionEN": "A packing replay shows Bento clipping the star flag to his sail and leaving the moon flag on the dock. The card reads: You need a star flag. The moon flag is optional. The sled is still at the dock.",
+                    "accessibleEN": "A packing replay shows Bento clipping the star flag to his sail and leaving the moon flag on the dock. The card reads: You need a star flag. The moon flag is optional. The sled is still at the dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.flag-choice.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line tells what happened without inventing a rule?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Bento chose to leave the moon flag.",
+                    "whyEN": "Bento chose to leave the moon; the card did not make him leave it."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Bento had to leave the moon flag.",
+                    "whyEN": "Optional means Bento could take the moon or leave it."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Confira se Bento escolheu ou se foi obrigado a deixar a lua.",
+                "retryPTBR": "Compare a ação de Bento com o que o cartão permite e exige.",
+                "responseEN": "Close the choice record. Bento zips across in the rainbow sail sled with the star flag, leaves a rainbow streak and joins gathering.c2.seat.02. The moon flag remains on the near dock. Commit reward.c2-02 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você contou a escolha de Bento sem transformá-la em obrigação.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C2-03",
+        "ordinal": 47,
+        "titlePTBR": "A balsa que faz quá",
+        "missionEN": "Sol winds up a giant yellow duck boat. Two little boats drift in the lane.",
+        "storyboardPath": "C2 - Moonwater/storyboards/C2-03.svg",
+        "travelerId": "traveler.c2-03",
+        "routeId": "route.c2-03",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c2-03",
+        "gatheringId": "gathering.c2",
+        "seatAnchorId": "gathering.c2.seat.03",
+        "setupEN": "Sol waits at the near bank in one giant yellow wind-up duck boat. Two little boats drift in the lane. A readable note says: Only cross after both boats are at the dock.",
+        "setupAccessibleEN": "Sol waits at the near bank in one giant yellow wind-up duck boat. Two little boats drift in the lane. A readable note says: Only cross after both boats are at the dock.",
+        "initialFacts": {
+          "conditionReviewed": false,
+          "bothDocked": false,
+          "permissionReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "condition"
+        },
+        "factDomains": {
+          "conditionReviewed": [
+            false,
+            true
+          ],
+          "bothDocked": [
+            false,
+            true
+          ],
+          "permissionReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "condition",
+            "permission",
+            "sequence"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C2-03.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C2-03-P2",
+            "objectiveId": "permission.both-boats-required",
+            "kind": "meaning_choice",
+            "goalEN": "Identify the actual prerequisite for crossing.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "conditionReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "condition"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "conditionReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-03.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-03-P2"
+                },
+                "noveltyEN": "Contrasts mechanical readiness with a condition that names both boats.",
+                "vocabulary": [
+                  {
+                    "term": "wound up",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "both boats",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-03.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "conditionReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "condition"
+                    },
+                    "captionEN": "The wound-up duck wiggles its tail at the near bank. Both little boats are still afloat in the lane. The note reads: Only cross after both boats are at the dock. A separate WHAT IF picture shows one little boat tied at the dock and the other afloat.",
+                    "accessibleEN": "The wound-up duck wiggles its tail at the near bank. Both little boats are still afloat in the lane. The note reads: Only cross after both boats are at the dock. A separate WHAT IF picture shows one little boat tied at the dock and the other afloat.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.docking-permission.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Does winding up the duck mean Sol can go?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "No, both boats still need to dock.",
+                    "whyEN": "The duck's readiness does not replace the condition about both boats."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Yes, the note says to go when the duck is ready.",
+                    "whyEN": "The duck is ready, but the note's condition still has to be met."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare a condição do bilhete com a situação mostrada.",
+                "retryPTBR": "Releia o bilhete e confira se a condição já foi cumprida.",
+                "responseEN": "Close the condition card. Sol waits with the wound-up duck; both little boats remain afloat.",
+                "confirmPTBR": "Você comparou o pato pronto com a condição do bilhete.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-03.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-03-P2"
+                },
+                "noveltyEN": "Tests whether both applies to the pair rather than a single boat.",
+                "vocabulary": [
+                  {
+                    "term": "one docked boat",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "both boats",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-03.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "conditionReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "condition"
+                    },
+                    "captionEN": "The wound-up duck wiggles its tail at the near bank. Both little boats are still afloat in the lane. The note reads: Only cross after both boats are at the dock. A separate WHAT IF picture shows one little boat tied at the dock and the other afloat.",
+                    "accessibleEN": "The wound-up duck wiggles its tail at the near bank. Both little boats are still afloat in the lane. The note reads: Only cross after both boats are at the dock. A separate WHAT IF picture shows one little boat tied at the dock and the other afloat.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.docking-permission.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Would one docked boat satisfy the condition if the other were still in the lane?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Yes, one docked boat is enough.",
+                    "whyEN": "This treats one boat as enough even though the condition names both."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "No, the note requires both boats to be at the dock.",
+                    "whyEN": "The condition covers both boats, so one docked boat leaves it incomplete."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe quantos barcos a condição menciona e compare com a hipótese.",
+                "retryPTBR": "Compare a hipótese com a exigência completa do bilhete.",
+                "responseEN": "Close the condition card. Sol waits with the wound-up duck; both little boats remain afloat.",
+                "confirmPTBR": "Você conferiu a condição para os dois barcos.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-03.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C2-03-P3",
+            "objectiveId": "permission.not-obligation",
+            "kind": "meaning_choice",
+            "goalEN": "Recognize permission after docking without inventing urgency.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "conditionReviewed": true,
+              "bothDocked": false
+            },
+            "onEnter": {
+              "bothDocked": true,
+              "inspectionOpen": true,
+              "inspectionStage": "permission"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "permissionReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-03.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-03-P3"
+                },
+                "noveltyEN": "Distinguishes permission to act from a penalty invented by urgency.",
+                "vocabulary": [
+                  {
+                    "term": "or",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "wait a little",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-03.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "conditionReviewed": true,
+                      "bothDocked": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "permission"
+                    },
+                    "captionEN": "Both little boats are tied in their dock spaces and the lane is clear. The note reads: Only cross after both boats are at the dock. A dock card reads: You may cross when the lane is clear. Sol waits in the duck boat at the near bank.",
+                    "accessibleEN": "Both little boats are tied in their dock spaces and the lane is clear. The note reads: Only cross after both boats are at the dock. A dock card reads: You may cross when the lane is clear. Sol waits in the duck boat at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.docking-permission.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "What does the note let Sol do now?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Cross now, or wait a little.",
+                    "whyEN": "The note allows crossing or waiting; it says nothing about losing a turn."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Cross now or lose her turn.",
+                    "whyEN": "The note gives no deadline or penalty for waiting."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare o que o bilhete permite com o que ele exige.",
+                "retryPTBR": "Confira se esperar também continua sendo uma possibilidade.",
+                "responseEN": "Close the permission card. Both little boats stay tied at the dock; Sol may depart but has not yet crossed.",
+                "confirmPTBR": "Você identificou a permissão sem acrescentar urgência.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-03.s2.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-03-P3"
+                },
+                "noveltyEN": "Contrasts may with must after the condition is met.",
+                "vocabulary": [
+                  {
+                    "term": "may",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "must",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-03.s2.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "conditionReviewed": true,
+                      "bothDocked": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "permission"
+                    },
+                    "captionEN": "Both little boats are tied in their dock spaces and the lane is clear. The note reads: Only cross after both boats are at the dock. A dock card reads: You may cross when the lane is clear. Sol waits in the duck boat at the near bank.",
+                    "accessibleEN": "Both little boats are tied in their dock spaces and the lane is clear. The note reads: Only cross after both boats are at the dock. A dock card reads: You may cross when the lane is clear. Sol waits in the duck boat at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.docking-permission.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which reminder keeps permission separate from an order?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Sol must cross now because both boats have docked.",
+                    "whyEN": "Must adds an obligation that the note does not give."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Sol may cross now, but she can still choose to wait.",
+                    "whyEN": "May expresses permission; must would turn it into an order."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se a frase dá uma escolha ou uma ordem.",
+                "retryPTBR": "Releia o verbo e veja se ele indica escolha ou obrigação.",
+                "responseEN": "Close the permission card. Both little boats stay tied at the dock; Sol may depart but has not yet crossed.",
+                "confirmPTBR": "Você distinguiu permissão de obrigação.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-03.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C2-03-P4",
+            "objectiveId": "sequence.docking-before-crossing",
+            "kind": "meaning_choice",
+            "goalEN": "Preserve completed docking before crossing in the preview report.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "permissionReviewed": true,
+              "bothDocked": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "sequence"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-03.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-03-P4"
+                },
+                "noveltyEN": "Contrasts once with while to preserve completed docking before crossing.",
+                "vocabulary": [
+                  {
+                    "term": "once",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "while",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-03.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "permissionReviewed": true,
+                      "bothDocked": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "sequence"
+                    },
+                    "captionEN": "A CROSSING PREVIEW card has two numbered pictures. Picture 1 shows both little boats tied at the dock. Picture 2 shows Sol starting across in the duck boat while the little boats stay tied. The real duck boat is still at the near bank.",
+                    "accessibleEN": "A CROSSING PREVIEW card has two numbered pictures. Picture 1 shows both little boats tied at the dock. Picture 2 shows Sol starting across in the duck boat while the little boats stay tied. The real duck boat is still at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.docking-permission.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "In the crossing preview, which line puts the events in the right order?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Sol crossed once both boats had docked.",
+                    "whyEN": "Once places docking before the crossing in the preview."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Sol crossed while both boats were docking.",
+                    "whyEN": "While makes docking and crossing happen at the same time, unlike the numbered scenes."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare a ordem dos quadros numerados no relato.",
+                "retryPTBR": "Confira se a primeira ação já terminou quando a segunda começa.",
+                "responseEN": "Close the crossing preview. Sol crosses in the duck boat with one quack while both little boats remain docked, then joins gathering.c2.seat.03. Commit reward.c2-03 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você manteve a ordem dos acontecimentos do relato.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C2-04",
+        "ordinal": 48,
+        "titlePTBR": "Fafá e a pequena frota",
+        "missionEN": "Fafá climbs onto a crescent-moon float with a dark lantern. Tiny paper boats wait in line.",
+        "storyboardPath": "C2 - Moonwater/storyboards/C2-04.svg",
+        "travelerId": "traveler.c2-04",
+        "routeId": "route.c2-04",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c2-04",
+        "gatheringId": "gathering.c2",
+        "seatAnchorId": "gathering.c2.seat.04",
+        "setupEN": "Fafá sits on one crescent-moon float at the near bank with a dark lantern. Tiny paper boats wait in a line. The moonwatch picnic has one empty lantern hook; earlier lights placed by the gathered helpers already shine.",
+        "setupAccessibleEN": "Fafá sits on one crescent-moon float at the near bank with a dark lantern. Tiny paper boats wait in a line. The moonwatch picnic has one empty lantern hook; earlier lights placed by the gathered helpers already shine.",
+        "initialFacts": {
+          "lanternLit": false,
+          "timingReviewed": false,
+          "fleetLinked": false,
+          "pullingReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "lighting"
+        },
+        "factDomains": {
+          "lanternLit": [
+            false,
+            true
+          ],
+          "timingReviewed": [
+            false,
+            true
+          ],
+          "fleetLinked": [
+            false,
+            true
+          ],
+          "pullingReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "lighting",
+            "pulling",
+            "credit"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C2-04.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C2-04-P2",
+            "objectiveId": "sequence.lighting-before-departure",
+            "kind": "meaning_choice",
+            "goalEN": "Keep lighting before the trip.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "lanternLit": false
+            },
+            "onEnter": {
+              "lanternLit": true,
+              "inspectionOpen": true,
+              "inspectionStage": "lighting"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "timingReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-04.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-04-P2"
+                },
+                "noveltyEN": "Use before with simple past to place an action earlier than a trip.",
+                "vocabulary": [
+                  {
+                    "term": "before",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "near bank",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-04.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "lanternLit": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "lighting"
+                    },
+                    "captionEN": "A two-picture record shows Fafá beside the same near-bank marker, first with a dark lantern and then with a lit lantern. Her float and the paper boats are still beside that marker.",
+                    "accessibleEN": "A two-picture record shows Fafá beside the same near-bank marker, first with a dark lantern and then with a lit lantern. Her float and the paper boats are still beside that marker.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.pocket-fleet.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line keeps the light and the trip in the right order?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Fafá lit it before the trip began.",
+                    "whyEN": "It places the lighting before the trip starts, while the float is still at the near bank."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Fafá lit it at the far bank.",
+                    "whyEN": "The far bank is the destination, so this puts the lighting after the trip."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe o lugar da lanterna e veja se a viagem já começou.",
+                "retryPTBR": "Use o marcador da margem para conferir a ordem mostrada.",
+                "responseEN": "Close the timing record. The lantern remains lit at the near bank; the float has not left.",
+                "confirmPTBR": "Isso! Você observou a ordem dos acontecimentos.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-04.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C2-04-P3",
+            "objectiveId": "reference.fleet-pulls-float",
+            "kind": "meaning_choice",
+            "goalEN": "Keep pulling agent and load distinct.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "timingReviewed": true,
+              "fleetLinked": false
+            },
+            "onEnter": {
+              "fleetLinked": true,
+              "inspectionOpen": true,
+              "inspectionStage": "pulling"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "pullingReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-04.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-04-P3"
+                },
+                "noveltyEN": "Keep the pulling agent separate from the object being pulled.",
+                "vocabulary": [
+                  {
+                    "term": "pull",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "float",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-04.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "timingReviewed": true,
+                      "fleetLinked": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "pulling"
+                    },
+                    "captionEN": "The paper boats are linked in a line ahead of the float. In a short towing demonstration beside the near-bank marker, the paper boats move forward, their rope tightens, and the float follows a short distance. The float remains beside the near bank.",
+                    "accessibleEN": "The paper boats are linked in a line ahead of the float. In a short towing demonstration beside the near-bank marker, the paper boats move forward, their rope tightens, and the float follows a short distance. The float remains beside the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.pocket-fleet.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line makes it clear who pulls what?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "The paper boats pull Fafá’s float.",
+                    "whyEN": "The paper boats are the ones pulling, and the float is what they pull."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "The float pulls the paper boats.",
+                    "whyEN": "This reverses the roles: it makes the float do the pulling."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Siga a direção do barbante e descubra quais barcos puxam.",
+                "retryPTBR": "Compare a ponta da linha com o objeto que está sendo puxado.",
+                "responseEN": "Close the towing demonstration. The linked paper boats remain in front of the float, ready to pull; no crossing has occurred.",
+                "confirmPTBR": "Isso! Você identificou quem puxa e o que é puxado.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C2-04.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C2-04-P4",
+            "objectiveId": "credit.shared-finale",
+            "kind": "meaning_choice",
+            "goalEN": "Credit the final contribution without erasing earlier helpers.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "pullingReviewed": true,
+              "fleetLinked": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "credit"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C2-04.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-04-P4"
+                },
+                "noveltyEN": "Recognize a final contribution while preserving shared credit.",
+                "vocabulary": [
+                  {
+                    "term": "finished",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "last lantern",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-04.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "pullingReviewed": true,
+                      "fleetLinked": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "credit"
+                    },
+                    "captionEN": "A FINALE PREVIEW card shows two numbered pictures. In picture 1 the group hangs lanterns, leaving one empty hook. In picture 2 Fafá hangs a lantern on that hook. All six gatherings glow in the second picture. The real Fafá and her lit lantern remain on the float at the near bank.",
+                    "accessibleEN": "A FINALE PREVIEW card shows two numbered pictures. In picture 1 the group hangs lanterns, leaving one empty hook. In picture 2 Fafá hangs a lantern on that hook. All six gatherings glow in the second picture. The real Fafá and her lit lantern remain on the float at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.pocket-fleet.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which sign thanks Fafá without giving her all the credit?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Fafá finished what we started.",
+                    "whyEN": "This gives Fafá the final part while keeping the helpers’ earlier work."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Fafá did it without us.",
+                    "whyEN": "This says the helpers did not take part in the work."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe as luzes que já estavam no lugar e quem pendura a última.",
+                "retryPTBR": "Confira quem começou e quem acrescenta a última parte.",
+                "responseEN": "Close the finale preview. The paper boats pull the float across; Fafá hangs the last lantern and joins gathering.c2.seat.04. All six gatherings glow together. Commit reward.c2-04 once at logical landing on first clear; the campaign now has 48 earned capybaras plus the original host. Replay adds no arrival or reward.",
+                "confirmPTBR": "Isso! Você reconheceu a contribuição de Fafá e dos ajudantes.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C2-04.s3.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C2-04-P4"
+                },
+                "noveltyEN": "Track the order of two contributors in a shared project.",
+                "vocabulary": [
+                  {
+                    "term": "began",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "last light",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C2-04.s3.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "pullingReviewed": true,
+                      "fleetLinked": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "credit"
+                    },
+                    "captionEN": "A FINALE PREVIEW card shows two numbered pictures. In picture 1 the group hangs lanterns, leaving one empty hook. In picture 2 Fafá hangs a lantern on that hook. All six gatherings glow in the second picture. The real Fafá and her lit lantern remain on the float at the near bank.",
+                    "accessibleEN": "A FINALE PREVIEW card shows two numbered pictures. In picture 1 the group hangs lanterns, leaving one empty hook. In picture 2 Fafá hangs a lantern on that hook. All six gatherings glow in the second picture. The real Fafá and her lit lantern remain on the float at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c2.pocket-fleet.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which preview caption keeps the order of the shared work?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Fafá began the display, and the group added the last light.",
+                    "whyEN": "This reverses who began and who added the final light."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "The group began the display, and Fafá added the last light.",
+                    "whyEN": "The group starts the display, and Fafá adds its final light."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe a ordem em que as luzes foram colocadas.",
+                "retryPTBR": "Confira quem colocou as luzes anteriores e quem acrescenta a última.",
+                "responseEN": "Close the finale preview. The paper boats pull the float across; Fafá hangs the last lantern and joins gathering.c2.seat.04. All six gatherings glow together. Commit reward.c2-04 once at logical landing on first clear; the campaign now has 48 earned capybaras plus the original host. Replay adds no arrival or reward.",
+                "confirmPTBR": "Isso! Você manteve a ordem das contribuições.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

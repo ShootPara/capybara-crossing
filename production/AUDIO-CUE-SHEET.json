@@ -1,0 +1,3094 @@
+{
+  "version": 1,
+  "status": "21 creator-supplied Mixcraft exports integrated for runtime playback",
+  "runtimeAudio": {
+    "priority": "minimize hosting bandwidth and storage for free-tier deployment",
+    "format": "mp3",
+    "channels": 1,
+    "sampleRateHz": 44100,
+    "constantBitrateKbps": 48,
+    "maxTotalBytes": 1572864,
+    "loadAfterUserActivation": true,
+    "loadCurrentChapterOnly": true,
+    "loadOneShotsOnDemand": true,
+    "musicPlayers": 1,
+    "oneShotPlayers": 1,
+    "chapterTransition": "direct switch"
+  },
+  "archiveAudio": {
+    "keepOriginalExports": true,
+    "compressedExportsAccepted": true,
+    "shipInWebBuild": false,
+    "includeCueIdAndSourceLicense": true
+  },
+  "cues": [
+    {
+      "id": "music.a1",
+      "type": "loop",
+      "layerTier": 1,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "warm plucked theme",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/A1 First Steps.mp3"
+    },
+    {
+      "id": "victory.a1",
+      "type": "one_shot",
+      "layerTier": 1,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 1.mp3"
+    },
+    {
+      "id": "music.a2",
+      "type": "loop",
+      "layerTier": 2,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "add reed-like soft sustained line",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/A2 The Reed Beds.mp3"
+    },
+    {
+      "id": "victory.a2",
+      "type": "one_shot",
+      "layerTier": 2,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 2.mp3"
+    },
+    {
+      "id": "music.b1",
+      "type": "loop",
+      "layerTier": 3,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "soft rain pulse; preserve motif",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/B1 The Rain Pool.mp3"
+    },
+    {
+      "id": "victory.b1",
+      "type": "one_shot",
+      "layerTier": 3,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 3.mp3"
+    },
+    {
+      "id": "music.b2",
+      "type": "loop",
+      "layerTier": 4,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "open brighter counterline",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/B2 The Island.mp3"
+    },
+    {
+      "id": "victory.b2",
+      "type": "one_shot",
+      "layerTier": 4,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 4.mp3"
+    },
+    {
+      "id": "music.c1",
+      "type": "loop",
+      "layerTier": 5,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "light bell/firefly texture",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/C1 Firefly Bend.mp3"
+    },
+    {
+      "id": "victory.c1",
+      "type": "one_shot",
+      "layerTier": 5,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 5.mp3"
+    },
+    {
+      "id": "music.c2",
+      "type": "loop",
+      "layerTier": 6,
+      "referenceId": "ref.audio.pond-theme",
+      "arrangement": "quiet moonwater full ensemble",
+      "durationTargetSeconds": 32,
+      "delivery": "Single premixed loop; see runtimeAudio and archiveAudio",
+      "mix": "Complexity increases, not loudness; matched perceived level across tiers",
+      "optional": true,
+      "interrupt": "Mute immediately; restore tier from checkpoint; switch directly after user activation",
+      "sourceFile": "Capybara Music/Capybara Background Music/C2 Moonwater.mp3"
+    },
+    {
+      "id": "victory.c2",
+      "type": "one_shot",
+      "layerTier": 6,
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "trigger": "first-clear resolved landing; completed chapter may use expanded tail",
+      "mix": "Same motif, increasing orchestration, not peak level",
+      "optional": true,
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 6.mp3"
+    },
+    {
+      "id": "sfx.scene",
+      "type": "one_shot",
+      "description": "soft acknowledgment",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/scene.mp3"
+    },
+    {
+      "id": "sfx.prop",
+      "type": "one_shot",
+      "description": "short wood/paper prop movement",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/prop.mp3"
+    },
+    {
+      "id": "sfx.clip",
+      "type": "one_shot",
+      "description": "clip light click",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/clip.mp3"
+    },
+    {
+      "id": "sfx.flag",
+      "type": "one_shot",
+      "description": "small cloth snap",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/flag.mp3"
+    },
+    {
+      "id": "sfx.dock",
+      "type": "one_shot",
+      "description": "gentle dock knock",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/dock.mp3"
+    },
+    {
+      "id": "sfx.paper",
+      "type": "one_shot",
+      "description": "paper fleet rustle",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/paper.mp3"
+    },
+    {
+      "id": "sfx.duck",
+      "type": "one_shot",
+      "description": "one playful quack",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/duck.mp3"
+    },
+    {
+      "id": "sfx.retry",
+      "type": "one_shot",
+      "description": "optional gentle neutral tap",
+      "referenceId": "ref.audio.effects",
+      "durationTargetSeconds": 1,
+      "optional": true,
+      "trigger": "Matched visible action; duck only C2-03 final travel; retry never harsh or required",
+      "sourceFile": "Capybara Music/Capybara SFX/retry.mp3"
+    },
+    {
+      "id": "victory.finale",
+      "type": "one_shot",
+      "referenceId": "ref.audio.victory-family",
+      "durationTargetSeconds": 4,
+      "optional": true,
+      "trigger": "First C2-04 clear after lantern placement; leave quiet tableau afterward",
+      "mix": "Six-layer resolution without sudden loudness increase",
+      "sourceFile": "Capybara Music/Capybara Victories/Victory 7.mp3"
+    }
+  ],
+  "events": [
+    {
+      "id": "A1-01.loop",
+      "crossingId": "A1-01",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-01.s1.cue",
+      "crossingId": "A1-01",
+      "slotId": "A1-01.s1",
+      "variantIds": [
+        "A1-01.s1.v01"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-01.s2.cue",
+      "crossingId": "A1-01",
+      "slotId": "A1-01.s2",
+      "variantIds": [
+        "A1-01.s2.v01",
+        "A1-01.s2.v02",
+        "A1-01.s2.v03",
+        "A1-01.s2.v04",
+        "A1-01.s2.v05",
+        "A1-01.s2.v06"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-01.s3.cue",
+      "crossingId": "A1-01",
+      "slotId": "A1-01.s3",
+      "variantIds": [
+        "A1-01.s3.v01"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-02.loop",
+      "crossingId": "A1-02",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-02.s1.cue",
+      "crossingId": "A1-02",
+      "slotId": "A1-02.s1",
+      "variantIds": [
+        "A1-02.s1.v01",
+        "A1-02.s1.v02",
+        "A1-02.s1.v03",
+        "A1-02.s1.v04",
+        "A1-02.s1.v05",
+        "A1-02.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-02.s2.cue",
+      "crossingId": "A1-02",
+      "slotId": "A1-02.s2",
+      "variantIds": [
+        "A1-02.s2.v01",
+        "A1-02.s2.v02",
+        "A1-02.s2.v03",
+        "A1-02.s2.v04"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-02.s3.cue",
+      "crossingId": "A1-02",
+      "slotId": "A1-02.s3",
+      "variantIds": [
+        "A1-02.s3.v01",
+        "A1-02.s3.v02",
+        "A1-02.s3.v03",
+        "A1-02.s3.v04",
+        "A1-02.s3.v05",
+        "A1-02.s3.v06",
+        "A1-02.s3.v07",
+        "A1-02.s3.v08"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-03.loop",
+      "crossingId": "A1-03",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-03.s1.cue",
+      "crossingId": "A1-03",
+      "slotId": "A1-03.s1",
+      "variantIds": [
+        "A1-03.s1.v01",
+        "A1-03.s1.v02",
+        "A1-03.s1.v03",
+        "A1-03.s1.v04",
+        "A1-03.s1.v05",
+        "A1-03.s1.v06",
+        "A1-03.s1.v07",
+        "A1-03.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-03.s2.cue",
+      "crossingId": "A1-03",
+      "slotId": "A1-03.s2",
+      "variantIds": [
+        "A1-03.s2.v01",
+        "A1-03.s2.v02",
+        "A1-03.s2.v03",
+        "A1-03.s2.v04",
+        "A1-03.s2.v05",
+        "A1-03.s2.v06",
+        "A1-03.s2.v07",
+        "A1-03.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-03.s3.cue",
+      "crossingId": "A1-03",
+      "slotId": "A1-03.s3",
+      "variantIds": [
+        "A1-03.s3.v01",
+        "A1-03.s3.v02",
+        "A1-03.s3.v03",
+        "A1-03.s3.v04",
+        "A1-03.s3.v05",
+        "A1-03.s3.v06",
+        "A1-03.s3.v07",
+        "A1-03.s3.v08"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-04.loop",
+      "crossingId": "A1-04",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-04.s1.cue",
+      "crossingId": "A1-04",
+      "slotId": "A1-04.s1",
+      "variantIds": [
+        "A1-04.s1.v01",
+        "A1-04.s1.v02",
+        "A1-04.s1.v03",
+        "A1-04.s1.v04",
+        "A1-04.s1.v05",
+        "A1-04.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-04.s2.cue",
+      "crossingId": "A1-04",
+      "slotId": "A1-04.s2",
+      "variantIds": [
+        "A1-04.s2.v01",
+        "A1-04.s2.v02",
+        "A1-04.s2.v03",
+        "A1-04.s2.v04",
+        "A1-04.s2.v05",
+        "A1-04.s2.v06"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-04.s3.cue",
+      "crossingId": "A1-04",
+      "slotId": "A1-04.s3",
+      "variantIds": [
+        "A1-04.s3.v01",
+        "A1-04.s3.v02",
+        "A1-04.s3.v03",
+        "A1-04.s3.v04",
+        "A1-04.s3.v05",
+        "A1-04.s3.v06"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-05.loop",
+      "crossingId": "A1-05",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-05.s1.cue",
+      "crossingId": "A1-05",
+      "slotId": "A1-05.s1",
+      "variantIds": [
+        "A1-05.s1.v01",
+        "A1-05.s1.v02",
+        "A1-05.s1.v03",
+        "A1-05.s1.v04",
+        "A1-05.s1.v05",
+        "A1-05.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-05.s2.cue",
+      "crossingId": "A1-05",
+      "slotId": "A1-05.s2",
+      "variantIds": [
+        "A1-05.s2.v01",
+        "A1-05.s2.v02",
+        "A1-05.s2.v03",
+        "A1-05.s2.v04",
+        "A1-05.s2.v05",
+        "A1-05.s2.v06"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-05.s3.cue",
+      "crossingId": "A1-05",
+      "slotId": "A1-05.s3",
+      "variantIds": [
+        "A1-05.s3.v01",
+        "A1-05.s3.v02",
+        "A1-05.s3.v03",
+        "A1-05.s3.v04",
+        "A1-05.s3.v05",
+        "A1-05.s3.v06"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-06.loop",
+      "crossingId": "A1-06",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-06.s1.cue",
+      "crossingId": "A1-06",
+      "slotId": "A1-06.s1",
+      "variantIds": [
+        "A1-06.s1.v01",
+        "A1-06.s1.v02",
+        "A1-06.s1.v03",
+        "A1-06.s1.v04",
+        "A1-06.s1.v05",
+        "A1-06.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-06.s2.cue",
+      "crossingId": "A1-06",
+      "slotId": "A1-06.s2",
+      "variantIds": [
+        "A1-06.s2.v01",
+        "A1-06.s2.v02",
+        "A1-06.s2.v03",
+        "A1-06.s2.v04",
+        "A1-06.s2.v05",
+        "A1-06.s2.v06"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-06.s3.cue",
+      "crossingId": "A1-06",
+      "slotId": "A1-06.s3",
+      "variantIds": [
+        "A1-06.s3.v01",
+        "A1-06.s3.v02",
+        "A1-06.s3.v03",
+        "A1-06.s3.v04",
+        "A1-06.s3.v05",
+        "A1-06.s3.v06"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-07.loop",
+      "crossingId": "A1-07",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-07.s1.cue",
+      "crossingId": "A1-07",
+      "slotId": "A1-07.s1",
+      "variantIds": [
+        "A1-07.s1.v01",
+        "A1-07.s1.v02",
+        "A1-07.s1.v03",
+        "A1-07.s1.v04",
+        "A1-07.s1.v05",
+        "A1-07.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-07.s2.cue",
+      "crossingId": "A1-07",
+      "slotId": "A1-07.s2",
+      "variantIds": [
+        "A1-07.s2.v01",
+        "A1-07.s2.v02",
+        "A1-07.s2.v03",
+        "A1-07.s2.v04",
+        "A1-07.s2.v05",
+        "A1-07.s2.v06",
+        "A1-07.s2.v07",
+        "A1-07.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-07.s3.cue",
+      "crossingId": "A1-07",
+      "slotId": "A1-07.s3",
+      "variantIds": [
+        "A1-07.s3.v01",
+        "A1-07.s3.v02",
+        "A1-07.s3.v03",
+        "A1-07.s3.v04",
+        "A1-07.s3.v05",
+        "A1-07.s3.v06"
+      ],
+      "sourceCue": "victory_short",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-08.loop",
+      "crossingId": "A1-08",
+      "sourceCue": "chapter_loop",
+      "productionCue": "music.a1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A1-08.s1.cue",
+      "crossingId": "A1-08",
+      "slotId": "A1-08.s1",
+      "variantIds": [
+        "A1-08.s1.v01",
+        "A1-08.s1.v02",
+        "A1-08.s1.v03",
+        "A1-08.s1.v04",
+        "A1-08.s1.v05",
+        "A1-08.s1.v06"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-08.s2.cue",
+      "crossingId": "A1-08",
+      "slotId": "A1-08.s2",
+      "variantIds": [
+        "A1-08.s2.v01",
+        "A1-08.s2.v02",
+        "A1-08.s2.v03",
+        "A1-08.s2.v04",
+        "A1-08.s2.v05",
+        "A1-08.s2.v06",
+        "A1-08.s2.v07",
+        "A1-08.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A1-08.s3.cue",
+      "crossingId": "A1-08",
+      "slotId": "A1-08.s3",
+      "variantIds": [
+        "A1-08.s3.v01",
+        "A1-08.s3.v02",
+        "A1-08.s3.v03",
+        "A1-08.s3.v04",
+        "A1-08.s3.v05",
+        "A1-08.s3.v06"
+      ],
+      "sourceCue": "victory_full_a1",
+      "productionCue": "victory.a1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-01.loop",
+      "crossingId": "A2-01",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-01.s1.cue",
+      "crossingId": "A2-01",
+      "slotId": "A2-01.s1",
+      "variantIds": [
+        "A2-01.s1.v01",
+        "A2-01.s1.v02",
+        "A2-01.s1.v03",
+        "A2-01.s1.v04",
+        "A2-01.s1.v05",
+        "A2-01.s1.v06",
+        "A2-01.s1.v07",
+        "A2-01.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-01.s2.cue",
+      "crossingId": "A2-01",
+      "slotId": "A2-01.s2",
+      "variantIds": [
+        "A2-01.s2.v01",
+        "A2-01.s2.v02",
+        "A2-01.s2.v03",
+        "A2-01.s2.v04",
+        "A2-01.s2.v05",
+        "A2-01.s2.v06",
+        "A2-01.s2.v07",
+        "A2-01.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-01.s3.cue",
+      "crossingId": "A2-01",
+      "slotId": "A2-01.s3",
+      "variantIds": [
+        "A2-01.s3.v01",
+        "A2-01.s3.v02",
+        "A2-01.s3.v03",
+        "A2-01.s3.v04",
+        "A2-01.s3.v05",
+        "A2-01.s3.v06",
+        "A2-01.s3.v07",
+        "A2-01.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-02.loop",
+      "crossingId": "A2-02",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-02.s1.cue",
+      "crossingId": "A2-02",
+      "slotId": "A2-02.s1",
+      "variantIds": [
+        "A2-02.s1.v01",
+        "A2-02.s1.v02",
+        "A2-02.s1.v03",
+        "A2-02.s1.v04",
+        "A2-02.s1.v05",
+        "A2-02.s1.v06",
+        "A2-02.s1.v07",
+        "A2-02.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-02.s2.cue",
+      "crossingId": "A2-02",
+      "slotId": "A2-02.s2",
+      "variantIds": [
+        "A2-02.s2.v01",
+        "A2-02.s2.v02",
+        "A2-02.s2.v03",
+        "A2-02.s2.v04",
+        "A2-02.s2.v05",
+        "A2-02.s2.v06",
+        "A2-02.s2.v07",
+        "A2-02.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-02.s3.cue",
+      "crossingId": "A2-02",
+      "slotId": "A2-02.s3",
+      "variantIds": [
+        "A2-02.s3.v01",
+        "A2-02.s3.v02",
+        "A2-02.s3.v03",
+        "A2-02.s3.v04",
+        "A2-02.s3.v05",
+        "A2-02.s3.v06",
+        "A2-02.s3.v07",
+        "A2-02.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-03.loop",
+      "crossingId": "A2-03",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-03.s1.cue",
+      "crossingId": "A2-03",
+      "slotId": "A2-03.s1",
+      "variantIds": [
+        "A2-03.s1.v01",
+        "A2-03.s1.v02",
+        "A2-03.s1.v03",
+        "A2-03.s1.v04",
+        "A2-03.s1.v05",
+        "A2-03.s1.v06",
+        "A2-03.s1.v07",
+        "A2-03.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-03.s2.cue",
+      "crossingId": "A2-03",
+      "slotId": "A2-03.s2",
+      "variantIds": [
+        "A2-03.s2.v01",
+        "A2-03.s2.v02",
+        "A2-03.s2.v03",
+        "A2-03.s2.v04",
+        "A2-03.s2.v05",
+        "A2-03.s2.v06",
+        "A2-03.s2.v07",
+        "A2-03.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-03.s3.cue",
+      "crossingId": "A2-03",
+      "slotId": "A2-03.s3",
+      "variantIds": [
+        "A2-03.s3.v01",
+        "A2-03.s3.v02",
+        "A2-03.s3.v03",
+        "A2-03.s3.v04",
+        "A2-03.s3.v05",
+        "A2-03.s3.v06",
+        "A2-03.s3.v07",
+        "A2-03.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-04.loop",
+      "crossingId": "A2-04",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-04.s1.cue",
+      "crossingId": "A2-04",
+      "slotId": "A2-04.s1",
+      "variantIds": [
+        "A2-04.s1.v01",
+        "A2-04.s1.v02",
+        "A2-04.s1.v03",
+        "A2-04.s1.v04",
+        "A2-04.s1.v05",
+        "A2-04.s1.v06",
+        "A2-04.s1.v07",
+        "A2-04.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-04.s2.cue",
+      "crossingId": "A2-04",
+      "slotId": "A2-04.s2",
+      "variantIds": [
+        "A2-04.s2.v01",
+        "A2-04.s2.v02",
+        "A2-04.s2.v03",
+        "A2-04.s2.v04",
+        "A2-04.s2.v05",
+        "A2-04.s2.v06",
+        "A2-04.s2.v07",
+        "A2-04.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-04.s3.cue",
+      "crossingId": "A2-04",
+      "slotId": "A2-04.s3",
+      "variantIds": [
+        "A2-04.s3.v01",
+        "A2-04.s3.v02",
+        "A2-04.s3.v03",
+        "A2-04.s3.v04",
+        "A2-04.s3.v05",
+        "A2-04.s3.v06",
+        "A2-04.s3.v07",
+        "A2-04.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-05.loop",
+      "crossingId": "A2-05",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-05.s1.cue",
+      "crossingId": "A2-05",
+      "slotId": "A2-05.s1",
+      "variantIds": [
+        "A2-05.s1.v01",
+        "A2-05.s1.v02",
+        "A2-05.s1.v03",
+        "A2-05.s1.v04",
+        "A2-05.s1.v05",
+        "A2-05.s1.v06",
+        "A2-05.s1.v07",
+        "A2-05.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-05.s2.cue",
+      "crossingId": "A2-05",
+      "slotId": "A2-05.s2",
+      "variantIds": [
+        "A2-05.s2.v01",
+        "A2-05.s2.v02",
+        "A2-05.s2.v03",
+        "A2-05.s2.v04",
+        "A2-05.s2.v05",
+        "A2-05.s2.v06",
+        "A2-05.s2.v07",
+        "A2-05.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-05.s3.cue",
+      "crossingId": "A2-05",
+      "slotId": "A2-05.s3",
+      "variantIds": [
+        "A2-05.s3.v01",
+        "A2-05.s3.v02",
+        "A2-05.s3.v03",
+        "A2-05.s3.v04",
+        "A2-05.s3.v05",
+        "A2-05.s3.v06",
+        "A2-05.s3.v07",
+        "A2-05.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-06.loop",
+      "crossingId": "A2-06",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-06.s1.cue",
+      "crossingId": "A2-06",
+      "slotId": "A2-06.s1",
+      "variantIds": [
+        "A2-06.s1.v01",
+        "A2-06.s1.v02",
+        "A2-06.s1.v03",
+        "A2-06.s1.v04",
+        "A2-06.s1.v05",
+        "A2-06.s1.v06",
+        "A2-06.s1.v07",
+        "A2-06.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-06.s2.cue",
+      "crossingId": "A2-06",
+      "slotId": "A2-06.s2",
+      "variantIds": [
+        "A2-06.s2.v01",
+        "A2-06.s2.v02",
+        "A2-06.s2.v03",
+        "A2-06.s2.v04",
+        "A2-06.s2.v05",
+        "A2-06.s2.v06",
+        "A2-06.s2.v07",
+        "A2-06.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-06.s3.cue",
+      "crossingId": "A2-06",
+      "slotId": "A2-06.s3",
+      "variantIds": [
+        "A2-06.s3.v01",
+        "A2-06.s3.v02",
+        "A2-06.s3.v03",
+        "A2-06.s3.v04",
+        "A2-06.s3.v05",
+        "A2-06.s3.v06",
+        "A2-06.s3.v07",
+        "A2-06.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-07.loop",
+      "crossingId": "A2-07",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-07.s1.cue",
+      "crossingId": "A2-07",
+      "slotId": "A2-07.s1",
+      "variantIds": [
+        "A2-07.s1.v01",
+        "A2-07.s1.v02",
+        "A2-07.s1.v03",
+        "A2-07.s1.v04",
+        "A2-07.s1.v05",
+        "A2-07.s1.v06",
+        "A2-07.s1.v07",
+        "A2-07.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-07.s2.cue",
+      "crossingId": "A2-07",
+      "slotId": "A2-07.s2",
+      "variantIds": [
+        "A2-07.s2.v01",
+        "A2-07.s2.v02",
+        "A2-07.s2.v03",
+        "A2-07.s2.v04",
+        "A2-07.s2.v05",
+        "A2-07.s2.v06",
+        "A2-07.s2.v07",
+        "A2-07.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-07.s3.cue",
+      "crossingId": "A2-07",
+      "slotId": "A2-07.s3",
+      "variantIds": [
+        "A2-07.s3.v01",
+        "A2-07.s3.v02",
+        "A2-07.s3.v03",
+        "A2-07.s3.v04",
+        "A2-07.s3.v05",
+        "A2-07.s3.v06",
+        "A2-07.s3.v07",
+        "A2-07.s3.v08"
+      ],
+      "sourceCue": "victory_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-08.loop",
+      "crossingId": "A2-08",
+      "sourceCue": "a2_loop",
+      "productionCue": "music.a2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "A2-08.s1.cue",
+      "crossingId": "A2-08",
+      "slotId": "A2-08.s1",
+      "variantIds": [
+        "A2-08.s1.v01",
+        "A2-08.s1.v02",
+        "A2-08.s1.v03",
+        "A2-08.s1.v04",
+        "A2-08.s1.v05",
+        "A2-08.s1.v06",
+        "A2-08.s1.v07",
+        "A2-08.s1.v08"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-08.s2.cue",
+      "crossingId": "A2-08",
+      "slotId": "A2-08.s2",
+      "variantIds": [
+        "A2-08.s2.v01",
+        "A2-08.s2.v02",
+        "A2-08.s2.v03",
+        "A2-08.s2.v04",
+        "A2-08.s2.v05",
+        "A2-08.s2.v06",
+        "A2-08.s2.v07",
+        "A2-08.s2.v08"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "A2-08.s3.cue",
+      "crossingId": "A2-08",
+      "slotId": "A2-08.s3",
+      "variantIds": [
+        "A2-08.s3.v01",
+        "A2-08.s3.v02",
+        "A2-08.s3.v03",
+        "A2-08.s3.v04",
+        "A2-08.s3.v05",
+        "A2-08.s3.v06",
+        "A2-08.s3.v07",
+        "A2-08.s3.v08"
+      ],
+      "sourceCue": "victory_full_a2",
+      "productionCue": "victory.a2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-01.loop",
+      "crossingId": "B1-01",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-01.s1.cue",
+      "crossingId": "B1-01",
+      "slotId": "B1-01.s1",
+      "variantIds": [
+        "B1-01.s1.v01",
+        "B1-01.s1.v02",
+        "B1-01.s1.v03",
+        "B1-01.s1.v04",
+        "B1-01.s1.v05",
+        "B1-01.s1.v06",
+        "B1-01.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-01.s2.cue",
+      "crossingId": "B1-01",
+      "slotId": "B1-01.s2",
+      "variantIds": [
+        "B1-01.s2.v01",
+        "B1-01.s2.v02",
+        "B1-01.s2.v03",
+        "B1-01.s2.v04",
+        "B1-01.s2.v05",
+        "B1-01.s2.v06",
+        "B1-01.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-01.s3.cue",
+      "crossingId": "B1-01",
+      "slotId": "B1-01.s3",
+      "variantIds": [
+        "B1-01.s3.v01",
+        "B1-01.s3.v02",
+        "B1-01.s3.v03",
+        "B1-01.s3.v04",
+        "B1-01.s3.v05",
+        "B1-01.s3.v06",
+        "B1-01.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-02.loop",
+      "crossingId": "B1-02",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-02.s1.cue",
+      "crossingId": "B1-02",
+      "slotId": "B1-02.s1",
+      "variantIds": [
+        "B1-02.s1.v01",
+        "B1-02.s1.v02",
+        "B1-02.s1.v03",
+        "B1-02.s1.v04",
+        "B1-02.s1.v05",
+        "B1-02.s1.v06",
+        "B1-02.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-02.s2.cue",
+      "crossingId": "B1-02",
+      "slotId": "B1-02.s2",
+      "variantIds": [
+        "B1-02.s2.v01",
+        "B1-02.s2.v02",
+        "B1-02.s2.v03",
+        "B1-02.s2.v04",
+        "B1-02.s2.v05",
+        "B1-02.s2.v06",
+        "B1-02.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-02.s3.cue",
+      "crossingId": "B1-02",
+      "slotId": "B1-02.s3",
+      "variantIds": [
+        "B1-02.s3.v01",
+        "B1-02.s3.v02",
+        "B1-02.s3.v03",
+        "B1-02.s3.v04",
+        "B1-02.s3.v05",
+        "B1-02.s3.v06",
+        "B1-02.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-03.loop",
+      "crossingId": "B1-03",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-03.s1.cue",
+      "crossingId": "B1-03",
+      "slotId": "B1-03.s1",
+      "variantIds": [
+        "B1-03.s1.v01",
+        "B1-03.s1.v02",
+        "B1-03.s1.v03",
+        "B1-03.s1.v04",
+        "B1-03.s1.v05",
+        "B1-03.s1.v06",
+        "B1-03.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-03.s2.cue",
+      "crossingId": "B1-03",
+      "slotId": "B1-03.s2",
+      "variantIds": [
+        "B1-03.s2.v01",
+        "B1-03.s2.v02",
+        "B1-03.s2.v03",
+        "B1-03.s2.v04",
+        "B1-03.s2.v05",
+        "B1-03.s2.v06",
+        "B1-03.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-03.s3.cue",
+      "crossingId": "B1-03",
+      "slotId": "B1-03.s3",
+      "variantIds": [
+        "B1-03.s3.v01",
+        "B1-03.s3.v02",
+        "B1-03.s3.v03",
+        "B1-03.s3.v04",
+        "B1-03.s3.v05",
+        "B1-03.s3.v06",
+        "B1-03.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-04.loop",
+      "crossingId": "B1-04",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-04.s1.cue",
+      "crossingId": "B1-04",
+      "slotId": "B1-04.s1",
+      "variantIds": [
+        "B1-04.s1.v01",
+        "B1-04.s1.v02",
+        "B1-04.s1.v03",
+        "B1-04.s1.v04",
+        "B1-04.s1.v05",
+        "B1-04.s1.v06",
+        "B1-04.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-04.s2.cue",
+      "crossingId": "B1-04",
+      "slotId": "B1-04.s2",
+      "variantIds": [
+        "B1-04.s2.v01",
+        "B1-04.s2.v02",
+        "B1-04.s2.v03",
+        "B1-04.s2.v04",
+        "B1-04.s2.v05",
+        "B1-04.s2.v06",
+        "B1-04.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-04.s3.cue",
+      "crossingId": "B1-04",
+      "slotId": "B1-04.s3",
+      "variantIds": [
+        "B1-04.s3.v01",
+        "B1-04.s3.v02",
+        "B1-04.s3.v03",
+        "B1-04.s3.v04",
+        "B1-04.s3.v05",
+        "B1-04.s3.v06",
+        "B1-04.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-05.loop",
+      "crossingId": "B1-05",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-05.s1.cue",
+      "crossingId": "B1-05",
+      "slotId": "B1-05.s1",
+      "variantIds": [
+        "B1-05.s1.v01",
+        "B1-05.s1.v02",
+        "B1-05.s1.v03",
+        "B1-05.s1.v04",
+        "B1-05.s1.v05",
+        "B1-05.s1.v06",
+        "B1-05.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-05.s2.cue",
+      "crossingId": "B1-05",
+      "slotId": "B1-05.s2",
+      "variantIds": [
+        "B1-05.s2.v01",
+        "B1-05.s2.v02",
+        "B1-05.s2.v03",
+        "B1-05.s2.v04",
+        "B1-05.s2.v05",
+        "B1-05.s2.v06",
+        "B1-05.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-05.s3.cue",
+      "crossingId": "B1-05",
+      "slotId": "B1-05.s3",
+      "variantIds": [
+        "B1-05.s3.v01",
+        "B1-05.s3.v02",
+        "B1-05.s3.v03",
+        "B1-05.s3.v04",
+        "B1-05.s3.v05",
+        "B1-05.s3.v06",
+        "B1-05.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-06.loop",
+      "crossingId": "B1-06",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-06.s1.cue",
+      "crossingId": "B1-06",
+      "slotId": "B1-06.s1",
+      "variantIds": [
+        "B1-06.s1.v01",
+        "B1-06.s1.v02",
+        "B1-06.s1.v03",
+        "B1-06.s1.v04",
+        "B1-06.s1.v05",
+        "B1-06.s1.v06",
+        "B1-06.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-06.s2.cue",
+      "crossingId": "B1-06",
+      "slotId": "B1-06.s2",
+      "variantIds": [
+        "B1-06.s2.v01",
+        "B1-06.s2.v02",
+        "B1-06.s2.v03",
+        "B1-06.s2.v04",
+        "B1-06.s2.v05",
+        "B1-06.s2.v06",
+        "B1-06.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-06.s3.cue",
+      "crossingId": "B1-06",
+      "slotId": "B1-06.s3",
+      "variantIds": [
+        "B1-06.s3.v01",
+        "B1-06.s3.v02",
+        "B1-06.s3.v03",
+        "B1-06.s3.v04",
+        "B1-06.s3.v05",
+        "B1-06.s3.v06",
+        "B1-06.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-07.loop",
+      "crossingId": "B1-07",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-07.s1.cue",
+      "crossingId": "B1-07",
+      "slotId": "B1-07.s1",
+      "variantIds": [
+        "B1-07.s1.v01",
+        "B1-07.s1.v02",
+        "B1-07.s1.v03",
+        "B1-07.s1.v04",
+        "B1-07.s1.v05",
+        "B1-07.s1.v06",
+        "B1-07.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-07.s2.cue",
+      "crossingId": "B1-07",
+      "slotId": "B1-07.s2",
+      "variantIds": [
+        "B1-07.s2.v01",
+        "B1-07.s2.v02",
+        "B1-07.s2.v03",
+        "B1-07.s2.v04",
+        "B1-07.s2.v05",
+        "B1-07.s2.v06",
+        "B1-07.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-07.s3.cue",
+      "crossingId": "B1-07",
+      "slotId": "B1-07.s3",
+      "variantIds": [
+        "B1-07.s3.v01",
+        "B1-07.s3.v02",
+        "B1-07.s3.v03",
+        "B1-07.s3.v04",
+        "B1-07.s3.v05",
+        "B1-07.s3.v06",
+        "B1-07.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-08.loop",
+      "crossingId": "B1-08",
+      "sourceCue": "loop_rain",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-08.s1.cue",
+      "crossingId": "B1-08",
+      "slotId": "B1-08.s1",
+      "variantIds": [
+        "B1-08.s1.v01",
+        "B1-08.s1.v02",
+        "B1-08.s1.v03",
+        "B1-08.s1.v04",
+        "B1-08.s1.v05",
+        "B1-08.s1.v06",
+        "B1-08.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-08.s2.cue",
+      "crossingId": "B1-08",
+      "slotId": "B1-08.s2",
+      "variantIds": [
+        "B1-08.s2.v01",
+        "B1-08.s2.v02",
+        "B1-08.s2.v03",
+        "B1-08.s2.v04",
+        "B1-08.s2.v05",
+        "B1-08.s2.v06",
+        "B1-08.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-08.s3.cue",
+      "crossingId": "B1-08",
+      "slotId": "B1-08.s3",
+      "variantIds": [
+        "B1-08.s3.v01",
+        "B1-08.s3.v02",
+        "B1-08.s3.v03",
+        "B1-08.s3.v04",
+        "B1-08.s3.v05",
+        "B1-08.s3.v06",
+        "B1-08.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-09.loop",
+      "crossingId": "B1-09",
+      "sourceCue": "loop_clearing",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-09.s1.cue",
+      "crossingId": "B1-09",
+      "slotId": "B1-09.s1",
+      "variantIds": [
+        "B1-09.s1.v01",
+        "B1-09.s1.v02",
+        "B1-09.s1.v03",
+        "B1-09.s1.v04",
+        "B1-09.s1.v05",
+        "B1-09.s1.v06",
+        "B1-09.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-09.s2.cue",
+      "crossingId": "B1-09",
+      "slotId": "B1-09.s2",
+      "variantIds": [
+        "B1-09.s2.v01",
+        "B1-09.s2.v02",
+        "B1-09.s2.v03",
+        "B1-09.s2.v04",
+        "B1-09.s2.v05",
+        "B1-09.s2.v06",
+        "B1-09.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-09.s3.cue",
+      "crossingId": "B1-09",
+      "slotId": "B1-09.s3",
+      "variantIds": [
+        "B1-09.s3.v01",
+        "B1-09.s3.v02",
+        "B1-09.s3.v03",
+        "B1-09.s3.v04",
+        "B1-09.s3.v05",
+        "B1-09.s3.v06",
+        "B1-09.s3.v07"
+      ],
+      "sourceCue": "victory_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-10.loop",
+      "crossingId": "B1-10",
+      "sourceCue": "loop_clearing",
+      "productionCue": "music.b1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B1-10.s1.cue",
+      "crossingId": "B1-10",
+      "slotId": "B1-10.s1",
+      "variantIds": [
+        "B1-10.s1.v01",
+        "B1-10.s1.v02",
+        "B1-10.s1.v03",
+        "B1-10.s1.v04",
+        "B1-10.s1.v05",
+        "B1-10.s1.v06",
+        "B1-10.s1.v07"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-10.s2.cue",
+      "crossingId": "B1-10",
+      "slotId": "B1-10.s2",
+      "variantIds": [
+        "B1-10.s2.v01",
+        "B1-10.s2.v02",
+        "B1-10.s2.v03",
+        "B1-10.s2.v04",
+        "B1-10.s2.v05",
+        "B1-10.s2.v06",
+        "B1-10.s2.v07"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B1-10.s3.cue",
+      "crossingId": "B1-10",
+      "slotId": "B1-10.s3",
+      "variantIds": [
+        "B1-10.s3.v01",
+        "B1-10.s3.v02",
+        "B1-10.s3.v03",
+        "B1-10.s3.v04",
+        "B1-10.s3.v05",
+        "B1-10.s3.v06",
+        "B1-10.s3.v07"
+      ],
+      "sourceCue": "victory_full_b1",
+      "productionCue": "victory.b1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-01.loop",
+      "crossingId": "B2-01",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-01.s1.cue",
+      "crossingId": "B2-01",
+      "slotId": "B2-01.s1",
+      "variantIds": [
+        "B2-01.s1.v01",
+        "B2-01.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-01.s2.cue",
+      "crossingId": "B2-01",
+      "slotId": "B2-01.s2",
+      "variantIds": [
+        "B2-01.s2.v01",
+        "B2-01.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-01.s3.cue",
+      "crossingId": "B2-01",
+      "slotId": "B2-01.s3",
+      "variantIds": [
+        "B2-01.s3.v01",
+        "B2-01.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-02.loop",
+      "crossingId": "B2-02",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-02.s1.cue",
+      "crossingId": "B2-02",
+      "slotId": "B2-02.s1",
+      "variantIds": [
+        "B2-02.s1.v01",
+        "B2-02.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-02.s2.cue",
+      "crossingId": "B2-02",
+      "slotId": "B2-02.s2",
+      "variantIds": [
+        "B2-02.s2.v01",
+        "B2-02.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-02.s3.cue",
+      "crossingId": "B2-02",
+      "slotId": "B2-02.s3",
+      "variantIds": [
+        "B2-02.s3.v01",
+        "B2-02.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-03.loop",
+      "crossingId": "B2-03",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-03.s1.cue",
+      "crossingId": "B2-03",
+      "slotId": "B2-03.s1",
+      "variantIds": [
+        "B2-03.s1.v01",
+        "B2-03.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-03.s2.cue",
+      "crossingId": "B2-03",
+      "slotId": "B2-03.s2",
+      "variantIds": [
+        "B2-03.s2.v01",
+        "B2-03.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-03.s3.cue",
+      "crossingId": "B2-03",
+      "slotId": "B2-03.s3",
+      "variantIds": [
+        "B2-03.s3.v01",
+        "B2-03.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-04.loop",
+      "crossingId": "B2-04",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-04.s1.cue",
+      "crossingId": "B2-04",
+      "slotId": "B2-04.s1",
+      "variantIds": [
+        "B2-04.s1.v01",
+        "B2-04.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-04.s2.cue",
+      "crossingId": "B2-04",
+      "slotId": "B2-04.s2",
+      "variantIds": [
+        "B2-04.s2.v01",
+        "B2-04.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-04.s3.cue",
+      "crossingId": "B2-04",
+      "slotId": "B2-04.s3",
+      "variantIds": [
+        "B2-04.s3.v01",
+        "B2-04.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-05.loop",
+      "crossingId": "B2-05",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-05.s1.cue",
+      "crossingId": "B2-05",
+      "slotId": "B2-05.s1",
+      "variantIds": [
+        "B2-05.s1.v01",
+        "B2-05.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-05.s2.cue",
+      "crossingId": "B2-05",
+      "slotId": "B2-05.s2",
+      "variantIds": [
+        "B2-05.s2.v01",
+        "B2-05.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-05.s3.cue",
+      "crossingId": "B2-05",
+      "slotId": "B2-05.s3",
+      "variantIds": [
+        "B2-05.s3.v01",
+        "B2-05.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-06.loop",
+      "crossingId": "B2-06",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-06.s1.cue",
+      "crossingId": "B2-06",
+      "slotId": "B2-06.s1",
+      "variantIds": [
+        "B2-06.s1.v01",
+        "B2-06.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-06.s2.cue",
+      "crossingId": "B2-06",
+      "slotId": "B2-06.s2",
+      "variantIds": [
+        "B2-06.s2.v01",
+        "B2-06.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-06.s3.cue",
+      "crossingId": "B2-06",
+      "slotId": "B2-06.s3",
+      "variantIds": [
+        "B2-06.s3.v01",
+        "B2-06.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-07.loop",
+      "crossingId": "B2-07",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-07.s1.cue",
+      "crossingId": "B2-07",
+      "slotId": "B2-07.s1",
+      "variantIds": [
+        "B2-07.s1.v01",
+        "B2-07.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-07.s2.cue",
+      "crossingId": "B2-07",
+      "slotId": "B2-07.s2",
+      "variantIds": [
+        "B2-07.s2.v01",
+        "B2-07.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-07.s3.cue",
+      "crossingId": "B2-07",
+      "slotId": "B2-07.s3",
+      "variantIds": [
+        "B2-07.s3.v01",
+        "B2-07.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-08.loop",
+      "crossingId": "B2-08",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-08.s1.cue",
+      "crossingId": "B2-08",
+      "slotId": "B2-08.s1",
+      "variantIds": [
+        "B2-08.s1.v01",
+        "B2-08.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-08.s2.cue",
+      "crossingId": "B2-08",
+      "slotId": "B2-08.s2",
+      "variantIds": [
+        "B2-08.s2.v01",
+        "B2-08.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-08.s3.cue",
+      "crossingId": "B2-08",
+      "slotId": "B2-08.s3",
+      "variantIds": [
+        "B2-08.s3.v01",
+        "B2-08.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-09.loop",
+      "crossingId": "B2-09",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-09.s1.cue",
+      "crossingId": "B2-09",
+      "slotId": "B2-09.s1",
+      "variantIds": [
+        "B2-09.s1.v01",
+        "B2-09.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-09.s2.cue",
+      "crossingId": "B2-09",
+      "slotId": "B2-09.s2",
+      "variantIds": [
+        "B2-09.s2.v01",
+        "B2-09.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-09.s3.cue",
+      "crossingId": "B2-09",
+      "slotId": "B2-09.s3",
+      "variantIds": [
+        "B2-09.s3.v01",
+        "B2-09.s3.v02"
+      ],
+      "sourceCue": "victory_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-10.loop",
+      "crossingId": "B2-10",
+      "sourceCue": "loop_island",
+      "productionCue": "music.b2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "B2-10.s1.cue",
+      "crossingId": "B2-10",
+      "slotId": "B2-10.s1",
+      "variantIds": [
+        "B2-10.s1.v01",
+        "B2-10.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-10.s2.cue",
+      "crossingId": "B2-10",
+      "slotId": "B2-10.s2",
+      "variantIds": [
+        "B2-10.s2.v01",
+        "B2-10.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "B2-10.s3.cue",
+      "crossingId": "B2-10",
+      "slotId": "B2-10.s3",
+      "variantIds": [
+        "B2-10.s3.v01",
+        "B2-10.s3.v02"
+      ],
+      "sourceCue": "victory_full_b2",
+      "productionCue": "victory.b2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-01.loop",
+      "crossingId": "C1-01",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-01.s1.cue",
+      "crossingId": "C1-01",
+      "slotId": "C1-01.s1",
+      "variantIds": [
+        "C1-01.s1.v01",
+        "C1-01.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-01.s2.cue",
+      "crossingId": "C1-01",
+      "slotId": "C1-01.s2",
+      "variantIds": [
+        "C1-01.s2.v01"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-01.s3.cue",
+      "crossingId": "C1-01",
+      "slotId": "C1-01.s3",
+      "variantIds": [
+        "C1-01.s3.v01"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-02.loop",
+      "crossingId": "C1-02",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-02.s1.cue",
+      "crossingId": "C1-02",
+      "slotId": "C1-02.s1",
+      "variantIds": [
+        "C1-02.s1.v01"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-02.s2.cue",
+      "crossingId": "C1-02",
+      "slotId": "C1-02.s2",
+      "variantIds": [
+        "C1-02.s2.v01",
+        "C1-02.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-02.s3.cue",
+      "crossingId": "C1-02",
+      "slotId": "C1-02.s3",
+      "variantIds": [
+        "C1-02.s3.v01"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-03.loop",
+      "crossingId": "C1-03",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-03.s1.cue",
+      "crossingId": "C1-03",
+      "slotId": "C1-03.s1",
+      "variantIds": [
+        "C1-03.s1.v01",
+        "C1-03.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-03.s2.cue",
+      "crossingId": "C1-03",
+      "slotId": "C1-03.s2",
+      "variantIds": [
+        "C1-03.s2.v01"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-03.s3.cue",
+      "crossingId": "C1-03",
+      "slotId": "C1-03.s3",
+      "variantIds": [
+        "C1-03.s3.v01",
+        "C1-03.s3.v02"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-04.loop",
+      "crossingId": "C1-04",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-04.s1.cue",
+      "crossingId": "C1-04",
+      "slotId": "C1-04.s1",
+      "variantIds": [
+        "C1-04.s1.v01",
+        "C1-04.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-04.s2.cue",
+      "crossingId": "C1-04",
+      "slotId": "C1-04.s2",
+      "variantIds": [
+        "C1-04.s2.v01",
+        "C1-04.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-04.s3.cue",
+      "crossingId": "C1-04",
+      "slotId": "C1-04.s3",
+      "variantIds": [
+        "C1-04.s3.v01"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-05.loop",
+      "crossingId": "C1-05",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-05.s1.cue",
+      "crossingId": "C1-05",
+      "slotId": "C1-05.s1",
+      "variantIds": [
+        "C1-05.s1.v01",
+        "C1-05.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-05.s2.cue",
+      "crossingId": "C1-05",
+      "slotId": "C1-05.s2",
+      "variantIds": [
+        "C1-05.s2.v01"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-05.s3.cue",
+      "crossingId": "C1-05",
+      "slotId": "C1-05.s3",
+      "variantIds": [
+        "C1-05.s3.v01",
+        "C1-05.s3.v02"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-06.loop",
+      "crossingId": "C1-06",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-06.s1.cue",
+      "crossingId": "C1-06",
+      "slotId": "C1-06.s1",
+      "variantIds": [
+        "C1-06.s1.v01",
+        "C1-06.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-06.s2.cue",
+      "crossingId": "C1-06",
+      "slotId": "C1-06.s2",
+      "variantIds": [
+        "C1-06.s2.v01",
+        "C1-06.s2.v02"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-06.s3.cue",
+      "crossingId": "C1-06",
+      "slotId": "C1-06.s3",
+      "variantIds": [
+        "C1-06.s3.v01"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-07.loop",
+      "crossingId": "C1-07",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-07.s1.cue",
+      "crossingId": "C1-07",
+      "slotId": "C1-07.s1",
+      "variantIds": [
+        "C1-07.s1.v01",
+        "C1-07.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-07.s2.cue",
+      "crossingId": "C1-07",
+      "slotId": "C1-07.s2",
+      "variantIds": [
+        "C1-07.s2.v01"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-07.s3.cue",
+      "crossingId": "C1-07",
+      "slotId": "C1-07.s3",
+      "variantIds": [
+        "C1-07.s3.v01"
+      ],
+      "sourceCue": "victory_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-08.loop",
+      "crossingId": "C1-08",
+      "sourceCue": "loop_fireflies",
+      "productionCue": "music.c1",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C1-08.s1.cue",
+      "crossingId": "C1-08",
+      "slotId": "C1-08.s1",
+      "variantIds": [
+        "C1-08.s1.v01"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-08.s2.cue",
+      "crossingId": "C1-08",
+      "slotId": "C1-08.s2",
+      "variantIds": [
+        "C1-08.s2.v01"
+      ],
+      "sourceCue": "prop_cue",
+      "productionCue": "sfx.prop",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C1-08.s3.cue",
+      "crossingId": "C1-08",
+      "slotId": "C1-08.s3",
+      "variantIds": [
+        "C1-08.s3.v01",
+        "C1-08.s3.v02"
+      ],
+      "sourceCue": "victory_full_c1",
+      "productionCue": "victory.c1",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-01.loop",
+      "crossingId": "C2-01",
+      "sourceCue": "loop_moonwater_1",
+      "productionCue": "music.c2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C2-01.s1.cue",
+      "crossingId": "C2-01",
+      "slotId": "C2-01.s1",
+      "variantIds": [
+        "C2-01.s1.v01",
+        "C2-01.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-01.s2.cue",
+      "crossingId": "C2-01",
+      "slotId": "C2-01.s2",
+      "variantIds": [
+        "C2-01.s2.v01"
+      ],
+      "sourceCue": "clip_click",
+      "productionCue": "sfx.clip",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-01.s3.cue",
+      "crossingId": "C2-01",
+      "slotId": "C2-01.s3",
+      "variantIds": [
+        "C2-01.s3.v01",
+        "C2-01.s3.v02"
+      ],
+      "sourceCue": "victory_c2",
+      "productionCue": "victory.c2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-02.loop",
+      "crossingId": "C2-02",
+      "sourceCue": "loop_moonwater_2",
+      "productionCue": "music.c2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C2-02.s1.cue",
+      "crossingId": "C2-02",
+      "slotId": "C2-02.s1",
+      "variantIds": [
+        "C2-02.s1.v01",
+        "C2-02.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-02.s2.cue",
+      "crossingId": "C2-02",
+      "slotId": "C2-02.s2",
+      "variantIds": [
+        "C2-02.s2.v01"
+      ],
+      "sourceCue": "flag_snap",
+      "productionCue": "sfx.flag",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-02.s3.cue",
+      "crossingId": "C2-02",
+      "slotId": "C2-02.s3",
+      "variantIds": [
+        "C2-02.s3.v01"
+      ],
+      "sourceCue": "victory_c2",
+      "productionCue": "victory.c2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-03.loop",
+      "crossingId": "C2-03",
+      "sourceCue": "loop_moonwater_3",
+      "productionCue": "music.c2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C2-03.s1.cue",
+      "crossingId": "C2-03",
+      "slotId": "C2-03.s1",
+      "variantIds": [
+        "C2-03.s1.v01",
+        "C2-03.s1.v02"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-03.s2.cue",
+      "crossingId": "C2-03",
+      "slotId": "C2-03.s2",
+      "variantIds": [
+        "C2-03.s2.v01",
+        "C2-03.s2.v02"
+      ],
+      "sourceCue": "dock_knock",
+      "productionCue": "sfx.dock",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-03.s3.cue",
+      "crossingId": "C2-03",
+      "slotId": "C2-03.s3",
+      "variantIds": [
+        "C2-03.s3.v01"
+      ],
+      "sourceCue": "victory_c2",
+      "productionCue": "victory.c2",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-04.loop",
+      "crossingId": "C2-04",
+      "sourceCue": "loop_moonwater_4",
+      "productionCue": "music.c2",
+      "trigger": "chapter/restore entry after user audio activation",
+      "visualEquivalent": "Chapter palette and persistent gathering composition",
+      "optional": true
+    },
+    {
+      "id": "C2-04.s1.cue",
+      "crossingId": "C2-04",
+      "slotId": "C2-04.s1",
+      "variantIds": [
+        "C2-04.s1.v01"
+      ],
+      "sourceCue": "soft_scene_cue",
+      "productionCue": "sfx.scene",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-04.s2.cue",
+      "crossingId": "C2-04",
+      "slotId": "C2-04.s2",
+      "variantIds": [
+        "C2-04.s2.v01"
+      ],
+      "sourceCue": "paper_rustle",
+      "productionCue": "sfx.paper",
+      "trigger": "slot.onEnter after evidence render; never reveal success early",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-04.s3.cue",
+      "crossingId": "C2-04",
+      "slotId": "C2-04.s3",
+      "variantIds": [
+        "C2-04.s3.v01",
+        "C2-04.s3.v02"
+      ],
+      "sourceCue": "victory_pond_finale",
+      "productionCue": "victory.finale",
+      "trigger": "first-clear resolved landing after accepted answer; suppress on restore and replay",
+      "visualEquivalent": "Evidence snapshot and responseEN; visible confirmation in pt-BR",
+      "optional": true
+    },
+    {
+      "id": "C2-03.quack",
+      "crossingId": "C2-03",
+      "productionCue": "sfx.duck",
+      "sourceCue": "authored responseEN quack",
+      "trigger": "S3 travel after accepted answer",
+      "visualEquivalent": "Duck motion/still crossing and arrival status",
+      "optional": true
+    }
+  ],
+  "musicControlsSeparate": true,
+  "audioNeverRequired": true,
+  "voice": "No narration recording commissioned; accessibility uses semantic text."
+}

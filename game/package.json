@@ -1,0 +1,1 @@
+{"name":"capybara-crossing","private":true,"type":"module","scripts":{"dev":"vite","build":"vite build --base=./","test":"node --test save.test.js"},"dependencies":{"qrcode":"^1.5.4","vite":"^8.3.8"}}

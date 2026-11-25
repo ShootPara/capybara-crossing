@@ -1,0 +1,3785 @@
+{
+  "kind": "capybara.chapter",
+  "mode": "release",
+  "schemaVersion": 1,
+  "campaignVersion": 1,
+  "chapter": {
+    "id": "C1",
+    "titlePTBR": "A curva dos vaga-lumes",
+    "order": 5,
+    "targetCrossings": 8,
+    "targetExercises": 36,
+    "bgmCueId": "loop.c1",
+    "crossings": [
+      {
+        "id": "C1-01",
+        "ordinal": 37,
+        "titlePTBR": "Um espacinho, por favor",
+        "missionEN": "Rosa needs room to tie up her boat and wants to ask the other paddler kindly.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-01.svg",
+        "travelerId": "traveler.c1-01",
+        "routeId": "route.c1-01",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-01",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.01",
+        "setupEN": "Rosa waits beside a crowded dock in her boat. Another paddler’s boat blocks the approach to a free tie-up post. The paddler has not noticed. Rosa wants enough room for both boats to stay.",
+        "setupAccessibleEN": "Rosa waits beside a crowded dock in her boat. Another paddler’s boat blocks the approach to a free tie-up post. The paddler has not noticed. Rosa wants enough room for both boats to stay.",
+        "initialFacts": {
+          "evidenceVisible": false,
+          "evidenceStage": "request",
+          "requestMade": false,
+          "reasonGiven": false,
+          "otherBoatMoved": false,
+          "approachClear": false,
+          "rosaBoatTaken": false,
+          "canLeave": false
+        },
+        "factDomains": {
+          "evidenceVisible": [
+            false,
+            true
+          ],
+          "evidenceStage": [
+            "request",
+            "reason",
+            "accommodation"
+          ],
+          "requestMade": [
+            false,
+            true
+          ],
+          "reasonGiven": [
+            false,
+            true
+          ],
+          "otherBoatMoved": [
+            false,
+            true
+          ],
+          "approachClear": [
+            false,
+            true
+          ],
+          "rosaBoatTaken": [
+            false
+          ],
+          "canLeave": [
+            false,
+            true
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [
+            "launch",
+            "landing"
+          ],
+          "audioCueIds": [
+            "loop.c1"
+          ]
+        },
+        "slots": [
+          {
+            "id": "C1-01.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-01-P2",
+            "objectiveId": "pragmatics.request-agency-scope",
+            "kind": "meaning_choice",
+            "goalEN": "Make a request tactful without changing its actor or scope.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "requestMade": false,
+              "otherBoatMoved": false
+            },
+            "onEnter": {
+              "evidenceVisible": true,
+              "evidenceStage": "request"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "requestMade": true
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-01.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-01-P2"
+                },
+                "noveltyEN": "Preserve the requested actor while softening a direct command.",
+                "vocabulary": [
+                  {
+                    "term": "could you",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "boat",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-01.s1.v01.clue",
+                    "kind": "seen",
+                    "requiredFacts": {
+                      "requestMade": false,
+                      "otherBoatMoved": false,
+                      "evidenceVisible": true,
+                      "evidenceStage": "request",
+                      "rosaBoatTaken": false
+                    },
+                    "captionEN": "Rosa waits in her boat. Another paddler’s boat blocks a free tie-up post. Her draft note says Move your boat. She wants that paddler to shift their own boat a little so both boats can stay. This is a favor, not an emergency.",
+                    "accessibleEN": "Rosa waits in her boat. Another paddler’s boat blocks a free tie-up post. Her draft note says Move your boat. She wants that paddler to shift their own boat a little so both boats can stay. This is a favor, not an emergency.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.mooring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which note asks the same person to act, but more kindly?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Could you move your boat a little, please?",
+                    "whyEN": "You asks the other paddler to move their own boat, politely preserving Rosa’s plan."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Would you mind if I moved your boat?",
+                    "whyEN": "If I moved asks permission for Rosa to move the other boat. It is polite but changes who acts."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "As duas frases são educadas. Confira quem faria a ação em cada uma.",
+                "retryPTBR": "Releia o pedido e compare com o plano de Rosa.",
+                "responseEN": "Rosa sends the selected polite request to the other paddler. Neither boat moves yet.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-01.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-01-P2"
+                },
+                "noveltyEN": "Preserve the limited scope of a favor instead of politely asking for too much.",
+                "vocabulary": [
+                  {
+                    "term": "would you mind",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "boat",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-01.s1.v02.clue",
+                    "kind": "seen",
+                    "requiredFacts": {
+                      "requestMade": false,
+                      "otherBoatMoved": false,
+                      "evidenceVisible": true,
+                      "evidenceStage": "request",
+                      "rosaBoatTaken": false
+                    },
+                    "captionEN": "Rosa waits in her boat. Another paddler’s boat blocks a free tie-up post. Her draft note says Move your boat. She wants that paddler to shift their own boat a little so both boats can stay. This is a favor, not an emergency.",
+                    "accessibleEN": "Rosa waits in her boat. Another paddler’s boat blocks a free tie-up post. Her draft note says Move your boat. She wants that paddler to shift their own boat a little so both boats can stay. This is a favor, not an emergency.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.mooring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which polite request keeps Rosa’s plan for both boats to stay?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Would you mind taking your boat away?",
+                    "whyEN": "Taking the boat away asks for departure, a larger action than Rosa needs."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Would you mind moving your boat a little?",
+                    "whyEN": "Moving a little asks the other paddler to make room while remaining at the dock."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare o tamanho do pedido com o espaço de que Rosa precisa.",
+                "retryPTBR": "Releia o pedido e compare com o plano de Rosa.",
+                "responseEN": "Rosa sends the selected polite request to the other paddler. Neither boat moves yet.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-01.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-01-P3",
+            "objectiveId": "pragmatics.reason-without-blame",
+            "kind": "meaning_choice",
+            "goalEN": "Explain a practical need without an unsupported accusation.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "requestMade": true,
+              "reasonGiven": false,
+              "otherBoatMoved": false
+            },
+            "onEnter": {
+              "evidenceStage": "reason"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "reasonGiven": true
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-01.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-01-P3"
+                },
+                "noveltyEN": "Give a specific present need instead of a sweeping accusation.",
+                "vocabulary": [
+                  {
+                    "term": "tie up",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "boat",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-01.s2.v01.clue",
+                    "kind": "seen",
+                    "requiredFacts": {
+                      "requestMade": true,
+                      "reasonGiven": false,
+                      "otherBoatMoved": false,
+                      "evidenceStage": "reason",
+                      "evidenceVisible": true,
+                      "rosaBoatTaken": false
+                    },
+                    "captionEN": "Rosa has asked the other paddler to shift their own boat a little. Her boat and loose rope wait beside a free tie-up post whose approach is blocked. Tie up means secure a boat with a rope. The paddler has not noticed the crowded dock.",
+                    "accessibleEN": "Rosa has asked the other paddler to shift their own boat a little. Her boat and loose rope wait beside a free tie-up post whose approach is blocked. Tie up means secure a boat with a rope. The paddler has not noticed the crowded dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.mooring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line explains the need without blaming the paddler?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "You never leave me any room.",
+                    "whyEN": "Never makes an unsupported claim about repeated behavior and blames the paddler."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "I need a little room to tie up.",
+                    "whyEN": "This describes Rosa’s current practical need without judging the other paddler."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "A frase descreve a necessidade de agora ou acusa a outra pessoa de fazer isso sempre?",
+                "retryPTBR": "Observe o espaço e a corda que Rosa está segurando.",
+                "responseEN": "Rosa explains that she needs room to tie up and points to the free post. The boats remain in place until the next slot begins.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-01.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-01-P4",
+            "objectiveId": "pragmatics.accurate-thanks",
+            "kind": "meaning_choice",
+            "goalEN": "Thank the paddler for the help actually observed.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "reasonGiven": true,
+              "otherBoatMoved": false,
+              "approachClear": false
+            },
+            "onEnter": {
+              "evidenceStage": "accommodation",
+              "otherBoatMoved": true,
+              "approachClear": true
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "evidenceVisible": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-01.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-01-P4"
+                },
+                "noveltyEN": "Thank for the observed accommodation without changing the action or its object.",
+                "vocabulary": [
+                  {
+                    "term": "making room",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "boat",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-01.s3.v01.clue",
+                    "kind": "event",
+                    "requiredFacts": {
+                      "reasonGiven": true,
+                      "otherBoatMoved": true,
+                      "approachClear": true,
+                      "evidenceStage": "accommodation",
+                      "evidenceVisible": true,
+                      "rosaBoatTaken": false
+                    },
+                    "captionEN": "The other paddler slides their own boat a little to one side, clearing the approach to the free post. Both boats remain at the dock. Rosa still controls her own boat and rope; nobody has taken her boat away.",
+                    "accessibleEN": "The other paddler slides their own boat a little to one side, clearing the approach to the free post. Both boats remain at the dock. Rosa still controls her own boat and rope; nobody has taken her boat away.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.mooring.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which thank-you accurately describes the help Rosa received?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Thanks for making room for my boat.",
+                    "whyEN": "The paddler moved their own boat aside to clear space for Rosa."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Thanks for taking my boat away.",
+                    "whyEN": "Rosa’s boat stayed under her control; nobody took it away."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Veja qual barco se moveu e o que mudou no espaço para Rosa.",
+                "retryPTBR": "Confira a ação que acabou de acontecer.",
+                "responseEN": "Rosa thanks the paddler, moves her own boat into the cleared spot, ties up and joins the Bend gathering. Close the inspection view. Commit reward.c1-01 once at logical landing.",
+                "confirmPTBR": "Isso!",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-02",
+        "ordinal": 38,
+        "titlePTBR": "Um lugar para os cestos",
+        "missionEN": "Two groups share a short dock. Bela wants a clear path without asking anyone to leave.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-02.svg",
+        "travelerId": "traveler.c1-02",
+        "routeId": "route.c1-02",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-02",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.02",
+        "setupEN": "Bela waits at the near end of a short shared dock. Two baskets, one belonging to each group, block the middle walkway. Both groups want to stay; there is empty space at the far end for both baskets.",
+        "setupAccessibleEN": "Bela waits at the near end of a short shared dock. Two baskets, one belonging to each group, block the middle walkway. Both groups want to stay; there is empty space at the far end for both baskets.",
+        "initialFacts": {
+          "requestMade": false,
+          "basketsMoved": false,
+          "benefitReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "request"
+        },
+        "factDomains": {
+          "requestMade": [
+            false,
+            true
+          ],
+          "basketsMoved": [
+            false,
+            true
+          ],
+          "benefitReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "request",
+            "benefit",
+            "thanks"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-02.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-02-P2",
+            "objectiveId": "pragmatics.cooperative-baskets",
+            "kind": "meaning_choice",
+            "goalEN": "Make a specific cooperative request that keeps both groups present.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "requestMade": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "request"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "requestMade": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-02.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-02-P2"
+                },
+                "noveltyEN": "Both identifies the two baskets to move in a cooperative request that keeps both groups present.",
+                "vocabulary": [
+                  {
+                    "term": "both",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-02.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "requestMade": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "request"
+                    },
+                    "captionEN": "Two baskets, one from each group, stand in the middle of the dock. An empty space at the end is marked with pictures of two baskets. Both groups and Bela are still on the dock.",
+                    "accessibleEN": "Two baskets, one from each group, stand in the middle of the dock. An empty space at the end is marked with pictures of two baskets. Both groups and Bela are still on the dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.shared-baskets.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which request keeps both groups on the dock?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Could we put both baskets at the end?",
+                    "whyEN": "Both baskets identifies the two objects to move while the request leaves both groups on the dock."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Could your group use another dock?",
+                    "whyEN": "This sends one group to another dock, so the groups would no longer stay together."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se a frase muda as cestas ou um grupo de lugar.",
+                "retryPTBR": "Compare o que será movido: as duas cestas ou um dos grupos?",
+                "responseEN": "Close the request card. Both groups agree to move their baskets; Bela remains at the near end.",
+                "confirmPTBR": "Você identificou um pedido que mantém os dois grupos no cais.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-02.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-02-P3",
+            "objectiveId": "pragmatics.shared-path-benefit",
+            "kind": "meaning_choice",
+            "goalEN": "Explain the benefit without excluding either group.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "requestMade": true,
+              "basketsMoved": false
+            },
+            "onEnter": {
+              "basketsMoved": true,
+              "inspectionOpen": true,
+              "inspectionStage": "benefit"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "benefitReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-02.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-02-P3"
+                },
+                "noveltyEN": "Everyone includes members of both groups in the benefit.",
+                "vocabulary": [
+                  {
+                    "term": "everyone",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-02.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "requestMade": true,
+                      "basketsMoved": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "benefit"
+                    },
+                    "captionEN": "Each group has moved its basket to the marked end space. People from both groups are walking along the cleared middle path. Bela waits at the near end.",
+                    "accessibleEN": "Each group has moved its basket to the marked end space. People from both groups are walking along the cleared middle path. Bela waits at the near end.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.shared-baskets.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line explains how this helps both groups?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "That way, everyone can get past.",
+                    "whyEN": "Everyone includes people from both groups in access to the clear path."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "That way, only our group can get past.",
+                    "whyEN": "Only our group limits access to one group and excludes the other."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe quem consegue passar pelo caminho livre.",
+                "retryPTBR": "Compare quem pode passar: todas as pessoas ou apenas um grupo?",
+                "responseEN": "Close the benefit card. Both baskets stay at the end and the walkway remains open to both groups. Bela has not crossed.",
+                "confirmPTBR": "Você percebeu quem recebe o benefício do caminho livre.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-02.s2.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-02-P3"
+                },
+                "noveltyEN": "Lets presents the basket move as enabling shared access; to itself makes access exclusive.",
+                "vocabulary": [
+                  {
+                    "term": "lets",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "to itself",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-02.s2.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "requestMade": true,
+                      "basketsMoved": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "benefit"
+                    },
+                    "captionEN": "Each group has moved its basket to the marked end space. People from both groups are walking along the cleared middle path. Bela waits at the near end.",
+                    "accessibleEN": "Each group has moved its basket to the marked end space. People from both groups are walking along the cleared middle path. Bela waits at the near end.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.shared-baskets.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which explanation gives both groups the same benefit?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Moving the baskets gives our group the path to itself.",
+                    "whyEN": "To itself gives the path exclusively to our group, leaving the other group out."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Moving the baskets lets both groups use the path.",
+                    "whyEN": "Lets links moving the baskets to both groups being able to use the path."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se as duas frases deixam os dois grupos usar o caminho.",
+                "retryPTBR": "Veja se o caminho fica disponível para os dois grupos ou só para um.",
+                "responseEN": "Close the benefit card. Both baskets stay at the end and the walkway remains open to both groups. Bela has not crossed.",
+                "confirmPTBR": "Você reconheceu a frase que compartilha o caminho entre os grupos.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-02.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-02-P4",
+            "objectiveId": "pragmatics.shared-credit",
+            "kind": "meaning_choice",
+            "goalEN": "Thank both groups without one-sided credit or blame.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "benefitReviewed": true,
+              "basketsMoved": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "thanks"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-02.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-02-P4"
+                },
+                "noveltyEN": "Everyone addresses both groups in a thank-you without assigning blame.",
+                "vocabulary": [
+                  {
+                    "term": "everyone",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-02.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "benefitReviewed": true,
+                      "basketsMoved": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "thanks"
+                    },
+                    "captionEN": "The two baskets stand at the end of the dock. A recap shows a member of each group moving its own basket. Bela is ready to thank the groups before crossing.",
+                    "accessibleEN": "The two baskets stand at the end of the dock. A recap shows a member of each group moving its own basket. Bela is ready to thank the groups before crossing.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.shared-baskets.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line thanks both groups without picking a side?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Thanks, everyone, for clearing the path.",
+                    "whyEN": "Everyone addresses both groups, and the line thanks them for the shared result."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Thanks to our group for fixing your mess.",
+                    "whyEN": "This thanks only our group and blames the other group for the problem."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se o agradecimento reconhece os dois grupos.",
+                "retryPTBR": "Compare quem recebe o agradecimento e se a frase culpa alguém.",
+                "responseEN": "Close the thanks card. Bela thanks both groups, crosses the cleared dock path and waves, then joins gathering.c1.seat.02. Commit reward.c1-02 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você escolheu um agradecimento que reconhece a ajuda dos dois grupos.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-03",
+        "ordinal": 39,
+        "titlePTBR": "A lanterna virada",
+        "missionEN": "Léo kept a friend waiting when the lantern pointed the wrong way.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-03.svg",
+        "travelerId": "traveler.c1-03",
+        "routeId": "route.c1-03",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-03",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.03",
+        "setupEN": "Léo waits at the near dock beside a blue lantern that he accidentally turned away from a friend waiting in a boat across the water. The friend has been waiting because the light did not face the boat.",
+        "setupAccessibleEN": "Léo waits at the near dock beside a blue lantern that he accidentally turned away from a friend waiting in a boat across the water. The friend has been waiting because the light did not face the boat.",
+        "initialFacts": {
+          "apologyReviewed": false,
+          "lanternCorrected": false,
+          "correctionReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "apology"
+        },
+        "factDomains": {
+          "apologyReviewed": [
+            false,
+            true
+          ],
+          "lanternCorrected": [
+            false,
+            true
+          ],
+          "correctionReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "apology",
+            "correction",
+            "reassurance"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-03.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-03-P2",
+            "objectiveId": "pragmatics.apology-ownership",
+            "kind": "meaning_choice",
+            "goalEN": "Accept responsibility without shifting blame.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "apologyReviewed": false
+            },
+            "onEnter": {
+              "lanternCorrected": true,
+              "inspectionOpen": true,
+              "inspectionStage": "apology"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "apologyReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-03.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-03-P2"
+                },
+                "noveltyEN": "Apology takes ownership of the lantern mistake rather than blaming the waiting friend.",
+                "vocabulary": [
+                  {
+                    "term": "sorry",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "pointed the wrong way",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-03.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "apologyReviewed": false,
+                      "lanternCorrected": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "apology"
+                    },
+                    "captionEN": "A replay shows Léo turning the lantern away from the waiting boat. Now he turns it toward the boat. The friend is still waiting across the water.",
+                    "accessibleEN": "A replay shows Léo turning the lantern away from the waiting boat. Now he turns it toward the boat. The friend is still waiting across the water.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.lantern-apology.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line takes responsibility?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Sorry I pointed the lantern the wrong way.",
+                    "whyEN": "This line acknowledges that Léo pointed the lantern the wrong way."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Sorry you were looking the wrong way.",
+                    "whyEN": "This line blames the friend for looking the wrong way, although Léo turned the lantern."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe quem assume a responsabilidade pelo erro.",
+                "retryPTBR": "Pense em quem virou a lanterna para o lado errado.",
+                "responseEN": "Close the replay. The corrected lantern keeps facing the waiting boat; Léo remains by the near dock.",
+                "confirmPTBR": "Você escolheu uma frase que reconhece o erro de Léo.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-03.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-03-P2"
+                },
+                "noveltyEN": "The apology acknowledges the wait without denying responsibility.",
+                "vocabulary": [
+                  {
+                    "term": "kept you waiting",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "sorry",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-03.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "apologyReviewed": false,
+                      "lanternCorrected": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "apology"
+                    },
+                    "captionEN": "A replay shows Léo turning the lantern away from the waiting boat. Now he turns it toward the boat. The friend is still waiting across the water.",
+                    "accessibleEN": "A replay shows Léo turning the lantern away from the waiting boat. Now he turns it toward the boat. The friend is still waiting across the water.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.lantern-apology.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which apology accepts responsibility without making an excuse?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "I kept you waiting, but it wasn't my fault.",
+                    "whyEN": "Léo acknowledges the wait but then denies responsibility."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "I kept you waiting. I'm sorry.",
+                    "whyEN": "Léo acknowledges making the friend wait and apologizes."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Veja se a frase pede desculpas sem dar uma desculpa.",
+                "retryPTBR": "Repare se a frase reconhece o erro ou tenta negar a responsabilidade.",
+                "responseEN": "Close the replay. The corrected lantern keeps facing the waiting boat; Léo remains by the near dock.",
+                "confirmPTBR": "Você escolheu um pedido de desculpas que assume a responsabilidade pela espera.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-03.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-03-P3",
+            "objectiveId": "pragmatics.correction-purpose",
+            "kind": "meaning_choice",
+            "goalEN": "Explain the completed correction and its present purpose.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "apologyReviewed": true,
+              "lanternCorrected": true
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "correction"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "correctionReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-03.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-03-P3"
+                },
+                "noveltyEN": "Reports the completed change and its present purpose; the alternative only judges the earlier situation.",
+                "vocabulary": [
+                  {
+                    "term": "turned",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "so",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "light",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-03.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "apologyReviewed": true,
+                      "lanternCorrected": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "correction"
+                    },
+                    "captionEN": "A before-and-now pair shows the lantern beam facing away from the boat earlier and reaching the front of the boat now. Léo remains beside the lantern at the near dock.",
+                    "accessibleEN": "A before-and-now pair shows the lantern beam facing away from the boat earlier and reaching the front of the boat now. Léo remains beside the lantern at the near dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.lantern-apology.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line tells the friend what to look for now?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "I've turned it so you can see the light.",
+                    "whyEN": "This line tells the friend about the change Léo made and what the light lets the friend see now."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "It should have been facing you the whole time.",
+                    "whyEN": "This line judges how the lantern should have been facing earlier; it does not report the correction made now."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Procure a frase que conta o que mudou e para quê.",
+                "retryPTBR": "A lanterna já foi virada; qual frase fala do que o amigo pode ver agora?",
+                "responseEN": "Close the before/now comparison. The blue patch remains on the waiting boat; Léo has not crossed.",
+                "confirmPTBR": "Você identificou a correção feita e seu objetivo agora.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-03.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-03-P4",
+            "objectiveId": "pragmatics.reassurance-scope",
+            "kind": "meaning_choice",
+            "goalEN": "Reassure within the current evidence without unlimited promises.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "correctionReviewed": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "reassurance"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-03.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-03-P4"
+                },
+                "noveltyEN": "Offers present guidance supported by the light without an unlimited future guarantee.",
+                "vocabulary": [
+                  {
+                    "term": "follow",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "light",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "now",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-03.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "correctionReviewed": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "reassurance"
+                    },
+                    "captionEN": "The blue beam reaches the waiting boat and lights the route toward the dock. Léo stands beside the lantern at the near dock.",
+                    "accessibleEN": "The blue beam reaches the waiting boat and lights the route toward the dock. Léo stands beside the lantern at the near dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.lantern-apology.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line reassures without making a promise Léo can't keep?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "You can follow the light now.",
+                    "whyEN": "This line guides the friend along the route shown by the light at this moment."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "You'll never have to wait again.",
+                    "whyEN": "This line promises there will be no waiting in any future situation."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Pense no que a luz permite fazer neste momento.",
+                "retryPTBR": "A cena mostra o caminho iluminado agora; evite promessas sobre todo o futuro.",
+                "responseEN": "Close the reassurance card. Léo crosses toward the waiting friend while the blue lantern stays by the dock, then joins gathering.c1.seat.03. Commit reward.c1-03 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você escolheu uma orientação apoiada pelo que aparece na cena.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-03.s3.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-03-P4"
+                },
+                "noveltyEN": "Describes the visible present situation rather than promising perfect future outcomes.",
+                "vocabulary": [
+                  {
+                    "term": "light",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "boat",
+                    "role": "recycled",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "now",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-03.s3.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "correctionReviewed": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "reassurance"
+                    },
+                    "captionEN": "The blue beam reaches the waiting boat and lights the route toward the dock. Léo stands beside the lantern at the near dock.",
+                    "accessibleEN": "The blue beam reaches the waiting boat and lights the route toward the dock. Léo stands beside the lantern at the near dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.lantern-apology.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line offers reassurance limited to this situation?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Everything will always go perfectly from now on.",
+                    "whyEN": "This line promises that every future event will go perfectly."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "The light is facing your boat now.",
+                    "whyEN": "This line describes where the light is at this moment."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Escolha a frase que descreve a luz neste momento.",
+                "retryPTBR": "A luz está visível no barco agora; a cena não garante tudo no futuro.",
+                "responseEN": "Close the reassurance card. Léo crosses toward the waiting friend while the blue lantern stays by the dock, then joins gathering.c1.seat.03. Commit reward.c1-03 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você descreveu o que a luz mostra agora.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-04",
+        "ordinal": 40,
+        "titlePTBR": "Silêncio perto do ninho",
+        "missionEN": "A stiff sign guards a sleeping nest. Nara wants a friendlier sign with the same rule.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-04.svg",
+        "travelerId": "traveler.c1-04",
+        "routeId": "route.c1-04",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-04",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.04",
+        "setupEN": "Nara waits at the near end of the creek path beside a sleeping nest. A sign reads: Loud noises are not permitted near the nest. Other parts of Firefly Bend are open as usual.",
+        "setupAccessibleEN": "Nara waits at the near end of the creek path beside a sleeping nest. A sign reads: Loud noises are not permitted near the nest. Other parts of Firefly Bend are open as usual.",
+        "initialFacts": {
+          "ruleReviewed": false,
+          "areaShown": false,
+          "scopeReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "rewrite"
+        },
+        "factDomains": {
+          "ruleReviewed": [
+            false,
+            true
+          ],
+          "areaShown": [
+            false,
+            true
+          ],
+          "scopeReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "rewrite",
+            "scope",
+            "report"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-04.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-04-P2",
+            "objectiveId": "pragmatics.friendly-rule",
+            "kind": "meaning_choice",
+            "goalEN": "Simplify a local rule without weakening its force.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "ruleReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "rewrite"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "ruleReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-04.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-04-P2"
+                },
+                "noveltyEN": "Core friendlier wording preserves the rule rather than making it optional.",
+                "vocabulary": [
+                  {
+                    "term": "please",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "near",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-04.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "rewrite"
+                    },
+                    "captionEN": "The sign reads: Loud noises are not permitted near the nest. Nara holds a blank replacement sign beside it. The nest is beside this stretch of the path.",
+                    "accessibleEN": "The sign reads: Loud noises are not permitted near the nest. Nara holds a blank replacement sign beside it. The nest is beside this stretch of the path.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.quiet-sign.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which rewrite keeps the rule?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Please stay quiet near the nest.",
+                    "whyEN": "Please sounds friendly, while the other wording makes following the rule optional."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Try to stay quiet if you feel like it.",
+                    "whyEN": "Try to stay quiet if you feel like it gives the reader a choice instead of stating the rule."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Repare se a frase mantém a regra, mesmo com um tom gentil.",
+                "retryPTBR": "Tente outra vez: a regra continua valendo mesmo quando o pedido é gentil.",
+                "responseEN": "Close the rewrite card. The friendly quiet sign remains beside the original; Nara stays before the nest stretch.",
+                "confirmPTBR": "Você identificou a frase gentil que ainda mantém a regra.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-04.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-04-P2"
+                },
+                "noveltyEN": "Preserve restriction strength against overstatement, rather than the core optionality weakening contrast.",
+                "vocabulary": [
+                  {
+                    "term": "loud noises",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "no sound at all",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-04.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "rewrite"
+                    },
+                    "captionEN": "The sign reads: Loud noises are not permitted near the nest. Nara holds a blank replacement sign beside it. The nest is beside this stretch of the path.",
+                    "accessibleEN": "The sign reads: Loud noises are not permitted near the nest. Nara holds a blank replacement sign beside it. The nest is beside this stretch of the path.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.quiet-sign.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which polite rewrite avoids making the original rule stricter?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Please make no sound at all near the nest.",
+                    "whyEN": "No sound at all bans even quiet sounds, a stronger restriction than the original."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Please avoid loud noises near the nest.",
+                    "whyEN": "This keeps the restriction on loud noises."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare o tipo de som proibido nas duas frases.",
+                "retryPTBR": "Confira se a frase proíbe apenas sons altos ou qualquer som.",
+                "responseEN": "Close the rewrite card. The friendly quiet sign remains beside the original; Nara stays before the nest stretch.",
+                "confirmPTBR": "Você manteve a regra sem torná-la mais rígida.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-04.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-04-P3",
+            "objectiveId": "pragmatics.local-rule-scope",
+            "kind": "meaning_choice",
+            "goalEN": "Keep the quiet rule limited to its marked area.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "ruleReviewed": true,
+              "areaShown": false
+            },
+            "onEnter": {
+              "areaShown": true,
+              "inspectionOpen": true,
+              "inspectionStage": "scope"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "scopeReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-04.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-04-P3"
+                },
+                "noveltyEN": "Core preserves near-nest scope rather than adding everywhere and all night.",
+                "vocabulary": [
+                  {
+                    "term": "near",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-04.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": true,
+                      "areaShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "scope"
+                    },
+                    "captionEN": "A nest icon and a boundary line mark the stretch beside the nest. The sign reads: Loud noises are not permitted near the nest. Other paths around the bend remain open.",
+                    "accessibleEN": "A nest icon and a boundary line mark the stretch beside the nest. The sign reads: Loud noises are not permitted near the nest. Other paths around the bend remain open.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.quiet-sign.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line keeps the rule in the right place?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Keep your voice down near the nest.",
+                    "whyEN": "Near the nest keeps the quiet rule within the marked area."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Keep your voice down everywhere, all night.",
+                    "whyEN": "Everywhere expands the rule beyond the marked nest area, and all night adds a time condition not stated on the original sign."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe o limite marcado: onde a regra de silêncio se aplica?",
+                "retryPTBR": "Tente outra vez: compare o local indicado com a área marcada.",
+                "responseEN": "Close the area comparison. The nest icon continues to mark only the near-nest stretch; Nara has not crossed.",
+                "confirmPTBR": "Você manteve a regra dentro da área indicada.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-04.s2.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-04-P3"
+                },
+                "noveltyEN": "Interpret conditional location scope versus an even-if extension beyond the boundary.",
+                "vocabulary": [
+                  {
+                    "term": "if",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "even if",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-04.s2.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "ruleReviewed": true,
+                      "areaShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "scope"
+                    },
+                    "captionEN": "A nest icon and a boundary line mark the stretch beside the nest. The sign reads: Loud noises are not permitted near the nest. Other paths around the bend remain open.",
+                    "accessibleEN": "A nest icon and a boundary line mark the stretch beside the nest. The sign reads: Loud noises are not permitted near the nest. Other paths around the bend remain open.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.quiet-sign.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which conditional reminder keeps the marked boundary?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Even if you are far from the nest, keep your voice down.",
+                    "whyEN": "Even if far extends the instruction outside the marked area."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "If you are near the nest, keep your voice down.",
+                    "whyEN": "The condition ties the instruction to being near the nest."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe como a condição liga o pedido ao lugar.",
+                "retryPTBR": "Compare perto e longe com o limite marcado.",
+                "responseEN": "Close the area comparison. The nest icon continues to mark only the near-nest stretch; Nara has not crossed.",
+                "confirmPTBR": "Você manteve o pedido ligado ao lugar indicado.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-04.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-04-P4",
+            "objectiveId": "pragmatics.faithful-quiet-report",
+            "kind": "meaning_choice",
+            "goalEN": "Report the action shown without inventing wider instructions.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "scopeReviewed": true,
+              "areaShown": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "report"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-04.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-04-P4"
+                },
+                "noveltyEN": "Core reports Nara own quiet passage, not an unsupported instruction to everyone; past narration refers to preview.",
+                "vocabulary": [
+                  {
+                    "term": "while",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "everyone",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-04.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "scopeReviewed": true,
+                      "areaShown": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "report"
+                    },
+                    "captionEN": "A card labeled CROSSING PREVIEW shows Nara gliding past the sleeping nest, with a quiet sound symbol beside her. The real Nara is still waiting at the start of the stretch.",
+                    "accessibleEN": "A card labeled CROSSING PREVIEW shows Nara gliding past the sleeping nest, with a quiet sound symbol beside her. The real Nara is still waiting at the start of the stretch.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.quiet-sign.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "In the crossing preview, which update tells what Nara did?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "I stayed quiet while passing the nest.",
+                    "whyEN": "This update reports Nara’s own quiet passage in the crossing preview."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "I asked everyone at the bend to stop talking.",
+                    "whyEN": "This update adds a request to everyone that the preview does not show."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Leia o que aparece na prévia: Nara fala de sua própria passagem ou dá uma ordem a todos?",
+                "retryPTBR": "Tente outra vez: a atualização deve contar o que aparece na prévia.",
+                "responseEN": "Close the crossing preview. Nara glides quietly past the nest, which stays still. The quiet sign remains, and Nara joins gathering.c1.seat.04. Commit reward.c1-04 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você relatou a passagem mostrada na prévia sem acrescentar uma ordem para todos.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-05",
+        "ordinal": 41,
+        "titlePTBR": "Um convite sem obrigação",
+        "missionEN": "Téo wants to join the picnic but forgot a snack. The invitation says snacks are welcome, not required.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-05.svg",
+        "travelerId": "traveler.c1-05",
+        "routeId": "route.c1-05",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-05",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.05",
+        "setupEN": "Téo waits on the near shore without a snack of his own. An invitation beside a snack basket reads: Bring a snack if you like. The basket belongs to the shore display and is not cargo that Téo must take.",
+        "setupAccessibleEN": "Téo waits on the near shore without a snack of his own. An invitation beside a snack basket reads: Bring a snack if you like. The basket belongs to the shore display and is not cargo that Téo must take.",
+        "initialFacts": {
+          "invitationReviewed": false,
+          "dockOpen": false,
+          "replyReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "invitation"
+        },
+        "factDomains": {
+          "invitationReviewed": [
+            false,
+            true
+          ],
+          "dockOpen": [
+            false,
+            true
+          ],
+          "replyReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "invitation",
+            "reply",
+            "reminder"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-05.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-05-P2",
+            "objectiveId": "pragmatics.optional-contribution",
+            "kind": "meaning_choice",
+            "goalEN": "Keep an optional contribution neither required nor forbidden.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "invitationReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "invitation"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "invitationReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-05.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-05-P2"
+                },
+                "noveltyEN": "The first item tests whether the invitation makes a snack a condition of joining.",
+                "vocabulary": [
+                  {
+                    "term": "if you like",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "have to",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-05.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "invitationReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "invitation"
+                    },
+                    "captionEN": "The invitation reads: Bring a snack if you like. Téo stands beside a display basket on the shore, carrying no snack.",
+                    "accessibleEN": "The invitation reads: Bring a snack if you like. Téo stands beside a display basket on the shore, carrying no snack.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.optional-snack.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "What does the card mean?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "You can bring a snack, but you don't have to.",
+                    "whyEN": "The invitation leaves bringing a snack optional; guests may attend either way."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "You have to bring a snack to come.",
+                    "whyEN": "This wording makes a snack a condition for coming, although the invitation welcomes guests without one."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se o convite deixa a escolha com cada pessoa.",
+                "retryPTBR": "Veja se levar um lanche é uma escolha ou uma condição para participar.",
+                "responseEN": "Close the invitation card. Téo remains without a snack at the near shore; the display basket stays there.",
+                "confirmPTBR": "Você identificou que a pessoa pode escolher se leva um lanche.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-05.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-05-P2"
+                },
+                "noveltyEN": "The second item checks that optional means both bringing and not bringing remain permitted.",
+                "vocabulary": [
+                  {
+                    "term": "welcome",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "not allowed",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-05.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "invitationReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "invitation"
+                    },
+                    "captionEN": "The invitation reads: Bring a snack if you like. Téo stands beside a display basket on the shore, carrying no snack.",
+                    "accessibleEN": "The invitation reads: Bring a snack if you like. Téo stands beside a display basket on the shore, carrying no snack.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.optional-snack.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which explanation keeps both choices open?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Coming without a snack is welcome, but bringing one is not allowed.",
+                    "whyEN": "This wording welcomes guests without a snack but incorrectly says bringing one is prohibited."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Bringing a snack is welcome, and coming without one is welcome too.",
+                    "whyEN": "Both bringing a snack and coming without one are welcomed, so neither choice is ruled out."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se as duas escolhas continuam permitidas.",
+                "retryPTBR": "Confira se a frase permite levar um lanche e também ir sem ele.",
+                "responseEN": "Close the invitation card. Téo remains without a snack at the near shore; the display basket stays there.",
+                "confirmPTBR": "Você reconheceu que o convite não proíbe levar um lanche.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-05.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-05-P3",
+            "objectiveId": "pragmatics.unconditional-acceptance",
+            "kind": "meaning_choice",
+            "goalEN": "Accept attendance without adding a snack condition or commitment.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "invitationReviewed": true
+            },
+            "onEnter": {
+              "dockOpen": true,
+              "inspectionOpen": true,
+              "inspectionStage": "reply"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "replyReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-05.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-05-P3"
+                },
+                "noveltyEN": "The item contrasts a direct acceptance with attendance made conditional on being able to bring food.",
+                "vocabulary": [
+                  {
+                    "term": "I'd love to",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "if I can bring a snack",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-05.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "invitationReviewed": true,
+                      "dockOpen": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "reply"
+                    },
+                    "captionEN": "The invitation reads: Bring a snack if you like. The dock is open. Téo wants to accept the invitation now and holds a blank reply card. He is carrying no snack.",
+                    "accessibleEN": "The invitation reads: Bring a snack if you like. The dock is open. Téo wants to accept the invitation now and holds a blank reply card. He is carrying no snack.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.optional-snack.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which reply accepts now without making a snack a condition?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "I'd love to come. I'll see you there!",
+                    "whyEN": "This reply accepts the invitation directly and makes no snack promise."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "I'll come if I can bring a snack.",
+                    "whyEN": "This reply does not promise a snack; it makes coming depend on whether the speaker can bring one."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se a resposta aceita o convite agora ou depende de outra condição.",
+                "retryPTBR": "Veja se a pessoa já aceita ou condiciona a ida a conseguir levar um lanche.",
+                "responseEN": "Close the reply card. The dock stays open; Téo has accepted and remains on the near shore without taking the basket.",
+                "confirmPTBR": "Você percebeu se a resposta aceita o convite sem impor uma condição sobre o lanche.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-05.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-05-P4",
+            "objectiveId": "pragmatics.optional-relay",
+            "kind": "meaning_choice",
+            "goalEN": "Relay the original optional invitation without adding obligation or expectation.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "replyReviewed": true,
+              "dockOpen": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "reminder"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-05.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-05-P4"
+                },
+                "noveltyEN": "The first item relays the invitation without adding a later-date rule for guests without food.",
+                "vocabulary": [
+                  {
+                    "term": "with or without a snack",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "wait until next time",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-05.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "replyReviewed": true,
+                      "dockOpen": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "reminder"
+                    },
+                    "captionEN": "A blank reminder card lies beside the invitation: Bring a snack if you like. The dock is open and Téo is waiting on shore without a snack.",
+                    "accessibleEN": "A blank reminder card lies beside the invitation: Bring a snack if you like. The dock is open and Téo is waiting on shore without a snack.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.optional-snack.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which reminder passes on the same meaning?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Come along, with or without a snack.",
+                    "whyEN": "This reminder preserves the choice to bring a snack or come without one."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Bring a snack or wait until next time.",
+                    "whyEN": "This wording adds a new rule that guests without a snack must wait for another time."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se o lembrete mantém a mesma escolha do convite.",
+                "retryPTBR": "Confira se o lembrete permite ir sem lanche, sem inventar uma espera para outra ocasião.",
+                "responseEN": "Close the reminder card. Téo crosses alone without a snack and joins gathering.c1.seat.05; the basket stays on shore. Commit reward.c1-05 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você reconheceu que o lembrete mantém a escolha de levar lanche.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-05.s3.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-05-P4"
+                },
+                "noveltyEN": "The second item distinguishes a personal choice from an added social expectation, not an absolute rule.",
+                "vocabulary": [
+                  {
+                    "term": "welcome to",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "if you want",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "expected to",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-05.s3.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "replyReviewed": true,
+                      "dockOpen": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "reminder"
+                    },
+                    "captionEN": "A blank reminder card lies beside the invitation: Bring a snack if you like. The dock is open and Téo is waiting on shore without a snack.",
+                    "accessibleEN": "A blank reminder card lies beside the invitation: Bring a snack if you like. The dock is open and Téo is waiting on shore without a snack.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.optional-snack.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which message leaves the snack decision with each guest?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "You're expected to bring a snack when you come.",
+                    "whyEN": "This wording adds a social expectation to bring a snack, but it does not state an absolute requirement."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "You're welcome to bring a snack if you want.",
+                    "whyEN": "This wording welcomes bringing a snack only if the guest chooses to; the decision remains personal."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se a frase deixa a decisão com cada pessoa ou acrescenta uma expectativa.",
+                "retryPTBR": "Veja se a mensagem apresenta o lanche como escolha ou como algo esperado de quem vai.",
+                "responseEN": "Close the reminder card. Téo crosses alone without a snack and joins gathering.c1.seat.05; the basket stays on shore. Commit reward.c1-05 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você distinguiu uma escolha pessoal de uma expectativa acrescentada.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-06",
+        "ordinal": 42,
+        "titlePTBR": "A canoa de quem chegou cedo",
+        "missionEN": "Pipa is early. A canoe has two seats ready; a later boat serves everyone else.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-06.svg",
+        "travelerId": "traveler.c1-06",
+        "routeId": "route.c1-06",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-06",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.06",
+        "setupEN": "Pipa arrived early and waits beside a canoe with two available seats. A board reads: Guests who arrived early can take this canoe. Other guests wait under a lamp for a later boat. The local boarding plan reserves this canoe for early guests.",
+        "setupAccessibleEN": "Pipa arrived early and waits beside a canoe with two available seats. A board reads: Guests who arrived early can take this canoe. Other guests wait under a lamp for a later boat. The local boarding plan reserves this canoe for early guests.",
+        "initialFacts": {
+          "groupReviewed": false,
+          "seatsShown": false,
+          "limitReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "group"
+        },
+        "factDomains": {
+          "groupReviewed": [
+            false,
+            true
+          ],
+          "seatsShown": [
+            false,
+            true
+          ],
+          "limitReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "group",
+            "limit",
+            "report"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-06.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-06-P2",
+            "objectiveId": "pragmatics.early-eligibility",
+            "kind": "meaning_choice",
+            "goalEN": "Interpret the restricted group invited to board now.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "groupReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "group"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "groupReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-06.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-06-P2"
+                },
+                "noveltyEN": "Core eligible early group versus all waiting guests; local plan supplies the exclusive boarding rule.",
+                "vocabulary": [
+                  {
+                    "term": "early",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "only",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-06.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "groupReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "group"
+                    },
+                    "captionEN": "The board reads: Guests who arrived early can take this canoe. A boarding list headed EARLY ARRIVALS includes Pipa beside a picture of this canoe. The other guests are listed beside the later boat. Two seats are available in the canoe.",
+                    "accessibleEN": "The board reads: Guests who arrived early can take this canoe. A boarding list headed EARLY ARRIVALS includes Pipa beside a picture of this canoe. The other guests are listed beside the later boat. Two seats are available in the canoe.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.early-canoe.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Who does this board invite to board now?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Only guests who arrived early.",
+                    "whyEN": "The early-arrival condition identifies the eligible group."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "All guests waiting at the dock.",
+                    "whyEN": "All guests waiting is too broad; the local plan reserves this canoe for early arrivals."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe a quem se aplica a condição de chegada.",
+                "retryPTBR": "Compare quem chegou cedo com todas as pessoas que esperam.",
+                "responseEN": "Close the group card. Pipa remains beside the canoe; the other guests keep waiting for the later boat.",
+                "confirmPTBR": "A condição de chegada cedo indica quem pode usar esta canoa.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-06.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-06-P2"
+                },
+                "noveltyEN": "Apply the qualifying condition to an excluded hypothetical guest, rather than repeat the eligible group label.",
+                "vocabulary": [
+                  {
+                    "term": "arrived late",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "arrived early",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-06.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "groupReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "group"
+                    },
+                    "captionEN": "The board reads: Guests who arrived early can take this canoe. A boarding list headed EARLY ARRIVALS includes Pipa beside a picture of this canoe. The other guests are listed beside the later boat. Two seats are available in the canoe.",
+                    "accessibleEN": "The board reads: Guests who arrived early can take this canoe. A boarding list headed EARLY ARRIVALS includes Pipa beside a picture of this canoe. The other guests are listed beside the later boat. Two seats are available in the canoe.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.early-canoe.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "A guest arrived late. Does this canoe list include that guest?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Yes. Waiting at the dock is enough.",
+                    "whyEN": "Waiting alone does not meet the early-arrival qualification."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "No. This list is for guests who arrived early.",
+                    "whyEN": "The early-arrival qualification excludes a late arrival from this list."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare a chegada dessa pessoa com o título da lista.",
+                "retryPTBR": "Veja se chegar tarde atende à condição mostrada.",
+                "responseEN": "Close the group card. Pipa remains beside the canoe; the other guests keep waiting for the later boat.",
+                "confirmPTBR": "Você aplicou a condição a uma pessoa que chegou tarde.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-06.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-06-P3",
+            "objectiveId": "pragmatics.only-early-group",
+            "kind": "meaning_choice",
+            "goalEN": "Keep only attached to the eligible group rather than their transport choice.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "groupReviewed": true,
+              "seatsShown": false
+            },
+            "onEnter": {
+              "seatsShown": true,
+              "inspectionOpen": true,
+              "inspectionStage": "limit"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "limitReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-06.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-06-P3"
+                },
+                "noveltyEN": "Core reserves this canoe for early guests without offering either boat freely.",
+                "vocabulary": [
+                  {
+                    "term": "only",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "early",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-06.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "groupReviewed": true,
+                      "seatsShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "limit"
+                    },
+                    "captionEN": "Two stars mark the available seats on this canoe. Its boarding list is headed EARLY ARRIVALS and includes Pipa. A separate list assigns the other waiting guests to the later boat. Pipa is still at the dock.",
+                    "accessibleEN": "Two stars mark the available seats on this canoe. Its boarding list is headed EARLY ARRIVALS and includes Pipa. A separate list assigns the other waiting guests to the later boat. Pipa is still at the dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.early-canoe.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line keeps the same limit?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "The canoe is for early guests only.",
+                    "whyEN": "Only limits the group for this canoe; the plan does not open both boats to everyone."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Early guests may sit anywhere on either boat.",
+                    "whyEN": "This gives early guests unrestricted seating on either boat, but the invitation concerns the marked seats on this canoe."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Veja a qual barco a restrição se aplica.",
+                "retryPTBR": "Compare a canoa reservada com a ideia de sentar em qualquer barco.",
+                "responseEN": "Close the seat comparison. Two canoe seats remain marked; Pipa has not boarded or crossed.",
+                "confirmPTBR": "A reserva vale para esta canoa; os outros convidados esperam o barco deles.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-06.s2.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-06-P3"
+                },
+                "noveltyEN": "Only modifies the eligible group in the accepted line; the alternative restricts their transport choice, which the plan does not say.",
+                "vocabulary": [
+                  {
+                    "term": "only",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "early",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-06.s2.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "groupReviewed": true,
+                      "seatsShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "limit"
+                    },
+                    "captionEN": "Two stars mark the available seats on this canoe. Its boarding list is headed EARLY ARRIVALS and includes Pipa. A separate list assigns the other waiting guests to the later boat. Pipa is still at the dock.",
+                    "accessibleEN": "Two stars mark the available seats on this canoe. Its boarding list is headed EARLY ARRIVALS and includes Pipa. A separate list assigns the other waiting guests to the later boat. Pipa is still at the dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.early-canoe.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which reminder limits this canoe without banning later travel?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Early guests may take only this canoe.",
+                    "whyEN": "Here only modifies this canoe, restricting where early guests may travel; the plan does not say that."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Only early guests may take this canoe.",
+                    "whyEN": "Only modifies early guests, identifying who may take this canoe."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe se “only” limita as pessoas ou o transporte.",
+                "retryPTBR": "Compare quem pode usar a canoa com a ideia de proibir outro transporte.",
+                "responseEN": "Close the seat comparison. Two canoe seats remain marked; Pipa has not boarded or crossed.",
+                "confirmPTBR": "Você identificou quem pode usar esta canoa.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-06.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-06-P4",
+            "objectiveId": "pragmatics.individual-departure",
+            "kind": "meaning_choice",
+            "goalEN": "Report the individual crossing without claiming everyone departed.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "limitReviewed": true,
+              "seatsShown": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "report"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-06.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-06-P4"
+                },
+                "noveltyEN": "Report Pipa individual departure, not unsupported departure of all waiting guests.",
+                "vocabulary": [
+                  {
+                    "term": "left",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "early canoe",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-06.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "limitReviewed": true,
+                      "seatsShown": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "report"
+                    },
+                    "captionEN": "A card labeled CROSSING PREVIEW shows Pipa in one marked canoe seat moving across the water. Other guests remain under the lamp beside the later-boat sign. The real Pipa is still at the near dock.",
+                    "accessibleEN": "A card labeled CROSSING PREVIEW shows Pipa in one marked canoe seat moving across the water. Other guests remain under the lamp beside the later-boat sign. The real Pipa is still at the near dock.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.early-canoe.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "In the crossing preview, which update avoids saying everyone left?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Pipa left on the early canoe.",
+                    "whyEN": "The update names Pipa alone and leaves the waiting guests out of the report."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "All the guests have already crossed.",
+                    "whyEN": "This claims every guest crossed, although the preview shows the others still waiting."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Na prévia, repare em quem atravessou e em quem ainda espera.",
+                "retryPTBR": "Compare o relato sobre Pipa com a afirmação sobre todos os convidados.",
+                "responseEN": "Close the crossing preview. Pipa takes one marked seat and crosses on the early canoe while the other guests wait under the lamp, then joins gathering.c1.seat.06. Commit reward.c1-06 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "O relato fala de Pipa; os outros convidados continuam esperando.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-07",
+        "ordinal": 43,
+        "titlePTBR": "O cais sob o salgueiro",
+        "missionEN": "Iris needs a sign for first-time visitors. Two docks stand at the same bend.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-07.svg",
+        "travelerId": "traveler.c1-07",
+        "routeId": "route.c1-07",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-07",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.07",
+        "setupEN": "Iris is a first-time visitor waiting on the near bank. Two docks stand at the same bend: one under a willow and one beside a stone post. First-time visitors should use the willow dock; returning visitors keep using the stone dock.",
+        "setupAccessibleEN": "Iris is a first-time visitor waiting on the near bank. Two docks stand at the same bend: one under a willow and one beside a stone post. First-time visitors should use the willow dock; returning visitors keep using the stone dock.",
+        "initialFacts": {
+          "placeReviewed": false,
+          "audienceShown": false,
+          "audienceReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "place"
+        },
+        "factDomains": {
+          "placeReviewed": [
+            false,
+            true
+          ],
+          "audienceShown": [
+            false,
+            true
+          ],
+          "audienceReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "place",
+            "audience",
+            "confirmation"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-07.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-07-P2",
+            "objectiveId": "pragmatics.precise-willow-reference",
+            "kind": "meaning_choice",
+            "goalEN": "Replace a vague place reference with a unique landmark.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "placeReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "place"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "placeReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-07.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-07-P2"
+                },
+                "noveltyEN": "Core distinguishes the unique willow landmark from the bend shared by both docks.",
+                "vocabulary": [
+                  {
+                    "term": "under the willow",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "first-time visitors",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-07.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "placeReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "place"
+                    },
+                    "captionEN": "Iris is on her first visit. Both docks are beside the water at the same bend. One is under a willow and one is beside a stone post. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. A draft sign says: New here? Go over there. Its arrow is missing.",
+                    "accessibleEN": "Iris is on her first visit. Both docks are beside the water at the same bend. One is under a willow and one is beside a stone post. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. A draft sign says: New here? Go over there. Its arrow is missing.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.willow-reference.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line tells new guests exactly where to go?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "New here? Use the dock under the willow.",
+                    "whyEN": "Under the willow identifies one dock; at the bend could mean either dock."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "New here? Use the dock at the bend.",
+                    "whyEN": "At the bend describes both docks, so it does not tell new guests which one to choose."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare os pontos de referência. Qual deles ajuda a distinguir um cais do outro?",
+                "retryPTBR": "Confira se a indicação aponta para um cais específico ou serve para os dois.",
+                "responseEN": "Close the sign comparison. Iris keeps the willow destination in view and remains on the near bank.",
+                "confirmPTBR": "Você escolheu uma indicação que ajuda os novos visitantes a encontrar o lugar certo.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-07.s1.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-07-P2"
+                },
+                "noveltyEN": "Resolve contrastive demonstrative reference without a shared pointing cue, rather than substitute beneath for under.",
+                "vocabulary": [
+                  {
+                    "term": "that dock",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "the other one",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-07.s1.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "placeReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "place"
+                    },
+                    "captionEN": "Iris is on her first visit. Both docks are beside the water at the same bend. One is under a willow and one is beside a stone post. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. A draft sign says: New here? Go over there. Its arrow is missing.",
+                    "accessibleEN": "Iris is on her first visit. Both docks are beside the water at the same bend. One is under a willow and one is beside a stone post. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. A draft sign says: New here? Go over there. Its arrow is missing.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.willow-reference.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which sign gives directions without assuming the reader knows which dock you mean?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "First visit? Use that dock, not the other one.",
+                    "whyEN": "That dock and the other one need a shared pointing reference that the sign does not provide."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "First visit? Use the willow dock, not the stone-post dock.",
+                    "whyEN": "The named landmarks distinguish the destination from the other dock."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare os nomes dos pontos de referência com as palavras que dependem de uma indicação.",
+                "retryPTBR": "Imagine ler a placa sem ninguém apontar para os cais.",
+                "responseEN": "Close the sign comparison. Iris keeps the willow destination in view and remains on the near bank.",
+                "confirmPTBR": "Você escolheu uma direção que funciona sem alguém apontar.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-07.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-07-P3",
+            "objectiveId": "pragmatics.first-visit-audience",
+            "kind": "meaning_choice",
+            "goalEN": "Preserve the direction for first-time visitors only.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "placeReviewed": true,
+              "audienceShown": false
+            },
+            "onEnter": {
+              "audienceShown": true,
+              "inspectionOpen": true,
+              "inspectionStage": "audience"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "audienceReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-07.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-07-P3"
+                },
+                "noveltyEN": "Core preserves the first-time audience; everyone would wrongly redirect returning visitors.",
+                "vocabulary": [
+                  {
+                    "term": "first-time visitors",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "from now on",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-07.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "placeReviewed": true,
+                      "audienceShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "audience"
+                    },
+                    "captionEN": "A light marks the willow dock. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. Both docks are open. Iris remains on the near bank.",
+                    "accessibleEN": "A light marks the willow dock. The route board pairs first-time visitors with the willow picture and returning visitors with the stone picture. Both docks are open. Iris remains on the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.willow-reference.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which note keeps the old route for returning guests?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "First-time visitors use the willow dock.",
+                    "whyEN": "First-time visitors limits the new direction and leaves the open stone dock for returning guests."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "From now on, everyone uses the willow dock.",
+                    "whyEN": "Everyone extends the change to returning guests, even though their stone dock remains open."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Observe para quem vale a nova orientação. Ela muda para todos ou só para quem está chegando pela primeira vez?",
+                "retryPTBR": "Compare a expressão sobre os visitantes com a informação de que o cais de pedra continua aberto.",
+                "responseEN": "Close the audience card. The willow dock stays marked for first-time visitors; the stone dock remains open for returning visitors. Iris has not crossed.",
+                "confirmPTBR": "Você manteve a orientação limitada aos visitantes de primeira viagem.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-07.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-07-P4",
+            "objectiveId": "pragmatics.named-destination",
+            "kind": "meaning_choice",
+            "goalEN": "Confirm the named destination without assuming a shared usual dock.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "audienceReviewed": true,
+              "audienceShown": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "confirmation"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-07.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-07-P4"
+                },
+                "noveltyEN": "Core names the willow dock rather than assuming a usual dock; both options omit there, but only one identifies the correct destination.",
+                "vocabulary": [
+                  {
+                    "term": "willow dock",
+                    "role": "target",
+                    "support": "visible"
+                  },
+                  {
+                    "term": "usually",
+                    "role": "recycled",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-07.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "audienceReviewed": true,
+                      "audienceShown": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "confirmation"
+                    },
+                    "captionEN": "Iris is on her first visit and holds a blank reply card. The route board pairs first-time visitors with the willow picture. Both the willow dock and the stone-post dock are visible across the water.",
+                    "accessibleEN": "Iris is on her first visit and holds a blank reply card. The route board pairs first-time visitors with the willow picture. Both the willow dock and the stone-post dock are visible across the water.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.willow-reference.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which reply clearly names the dock for a first-time visitor?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "I'll meet you at the willow dock.",
+                    "whyEN": "Naming the willow dock identifies the intended place for a first-time visitor."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "I'll meet you at the dock we usually use.",
+                    "whyEN": "The usual dock assumes Iris shares a past routine, but she is visiting for the first time."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Iris está visitando pela primeira vez. Qual opção identifica um lugar que ela pode reconhecer?",
+                "retryPTBR": "Compare a opção que nomeia um ponto de referência com a que fala de um costume compartilhado.",
+                "responseEN": "Close the reply card. Iris crosses to the willow dock and posts the matching first-time-visitor sign, then joins gathering.c1.seat.07. Commit reward.c1-07 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você confirmou o destino com uma indicação clara para Iris.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C1-08",
+        "ordinal": 44,
+        "titlePTBR": "Boas-vindas para todos",
+        "missionEN": "Malu is bringing the final welcome board. The route opened on time, with help from the dock crew.",
+        "storyboardPath": "C1 - Firefly Bend/storyboards/C1-08.svg",
+        "travelerId": "traveler.c1-08",
+        "routeId": "route.c1-08",
+        "landingAnchorId": "landing",
+        "rewardId": "reward.c1-08",
+        "gatheringId": "gathering.c1",
+        "seatAnchorId": "gathering.c1.seat.08",
+        "setupEN": "Malu waits on the near bank with the final welcome board. The route already opened at six as planned, with help from the dock crew. A clock and an opening note show the same time. The welcome stand at Firefly Bend is empty.",
+        "setupAccessibleEN": "Malu waits on the near bank with the final welcome board. The route already opened at six as planned, with help from the dock crew. A clock and an opening note show the same time. The welcome stand at Firefly Bend is empty.",
+        "initialFacts": {
+          "timingReviewed": false,
+          "thanksShown": false,
+          "thanksReviewed": false,
+          "inspectionOpen": false,
+          "canLeave": false,
+          "inspectionStage": "timing"
+        },
+        "factDomains": {
+          "timingReviewed": [
+            false,
+            true
+          ],
+          "thanksShown": [
+            false,
+            true
+          ],
+          "thanksReviewed": [
+            false,
+            true
+          ],
+          "inspectionOpen": [
+            false,
+            true
+          ],
+          "canLeave": [
+            false,
+            true
+          ],
+          "inspectionStage": [
+            "timing",
+            "thanks",
+            "welcome"
+          ]
+        },
+        "refs": {
+          "visualRefIds": [],
+          "anchorIds": [],
+          "audioCueIds": []
+        },
+        "slots": [
+          {
+            "id": "C1-08.s1",
+            "order": 1,
+            "role": "reveal",
+            "storyboardBeatId": "C1-08-P2",
+            "objectiveId": "pragmatics.planned-opening",
+            "kind": "meaning_choice",
+            "goalEN": "Keep the planned and actual opening time unchanged.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "timingReviewed": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "timing"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "timingReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-08.s1.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-08-P2"
+                },
+                "noveltyEN": "The on-time reading keeps actual and planned opening at six; the competing reading changes the timing.",
+                "vocabulary": [
+                  {
+                    "term": "as planned",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-08.s1.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "timingReviewed": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "timing"
+                    },
+                    "captionEN": "The opening record shows PLANNED: SIX and OPENED: SIX beside a clock showing six. A picture shows the dock crew preparing the route. Malu holds her welcome board on the near bank.",
+                    "accessibleEN": "The opening record shows PLANNED: SIX and OPENED: SIX beside a clock showing six. A picture shows the dock crew preparing the route. Malu holds her welcome board on the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.welcome-board.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line tells the right story?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "The dock opened at six, as planned.",
+                    "whyEN": "As planned confirms that the actual opening time matched the planned time."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "The dock opened earlier than planned.",
+                    "whyEN": "Earlier than planned changes the recorded opening time instead of matching the plan."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "Compare o horário planejado com o horário real. Eles são iguais ou diferentes?",
+                "retryPTBR": "Confira se a frase mantém o mesmo horário planejado e real.",
+                "responseEN": "Close the timing card. Malu keeps the on-time fact on the board and remains at the near bank.",
+                "confirmPTBR": "Você comparou corretamente os horários planejado e real.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-08.s2",
+            "order": 2,
+            "role": "prepare",
+            "storyboardBeatId": "C1-08-P3",
+            "objectiveId": "pragmatics.truthful-thanks",
+            "kind": "meaning_choice",
+            "goalEN": "Thank the crew without implying an early opening.",
+            "targetCount": 1,
+            "mode": "single_variant",
+            "requiredFacts": {
+              "timingReviewed": true,
+              "thanksShown": false
+            },
+            "onEnter": {
+              "thanksShown": true,
+              "inspectionOpen": true,
+              "inspectionStage": "thanks"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "thanksReviewed": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-08.s2.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-08-P3"
+                },
+                "noveltyEN": "The thanks accurately credits the crew for helping with an on-time opening without claiming the dock opened early.",
+                "vocabulary": [
+                  {
+                    "term": "on time",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-08.s2.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "timingReviewed": true,
+                      "thanksShown": true,
+                      "inspectionOpen": true,
+                      "inspectionStage": "thanks"
+                    },
+                    "captionEN": "A blank thank-you line sits below the opening record: PLANNED: SIX; OPENED: SIX. A picture shows the crew preparing the dock. Malu remains at the near bank.",
+                    "accessibleEN": "A blank thank-you line sits below the opening record: PLANNED: SIX; OPENED: SIX. A picture shows the crew preparing the dock. Malu remains at the near bank.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.welcome-board.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which line thanks the crew without adding an untrue claim?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Thanks for helping us open on time!",
+                    "whyEN": "On time matches the planned and actual opening times shown on the clock and note."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Thanks for getting us open early!",
+                    "whyEN": "Early claims a different opening time from the planned and actual time shown."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "O relógio e a nota mostram que o local abriu no horário ou antes?",
+                "retryPTBR": "Compare o agradecimento com os dois horários registrados.",
+                "responseEN": "Close the thanks card. The board thanks the crew for opening on time; Malu has not crossed.",
+                "confirmPTBR": "Você agradeceu pelo que aconteceu, sem mudar o horário.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "C1-08.s3",
+            "order": 3,
+            "role": "cross_and_land",
+            "storyboardBeatId": "C1-08-P4",
+            "objectiveId": "pragmatics.inclusive-welcome",
+            "kind": "meaning_choice",
+            "goalEN": "Name Firefly Bend and welcome helpers and other visitors alike.",
+            "targetCount": 2,
+            "mode": "standard",
+            "requiredFacts": {
+              "thanksReviewed": true,
+              "thanksShown": true,
+              "canLeave": false
+            },
+            "onEnter": {
+              "inspectionOpen": true,
+              "inspectionStage": "welcome"
+            },
+            "overlayKeys": [],
+            "onCorrect": {
+              "canLeave": true,
+              "inspectionOpen": false
+            },
+            "refs": {
+              "visualRefIds": [],
+              "anchorIds": [],
+              "audioCueIds": []
+            },
+            "variants": [
+              {
+                "id": "C1-08.s3.v01",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-08-P4"
+                },
+                "noveltyEN": "The welcome names Firefly Bend and invites visitors without making help a condition for joining.",
+                "vocabulary": [
+                  {
+                    "term": "welcome",
+                    "role": "recycled",
+                    "support": "already_introduced"
+                  },
+                  {
+                    "term": "Firefly Bend",
+                    "role": "scene_supported",
+                    "support": "visible"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-08.s3.v01.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "thanksReviewed": true,
+                      "thanksShown": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "welcome"
+                    },
+                    "captionEN": "The board is headed Firefly Bend. An audience picture shows helpers carrying tools and other visitors with empty hands entering the same gathering. Malu holds the board on the near bank; its empty stand is at Firefly Bend.",
+                    "accessibleEN": "The board is headed Firefly Bend. An audience picture shows helpers carrying tools and other visitors with empty hands entering the same gathering. Malu holds the board on the near bank; its empty stand is at Firefly Bend.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.welcome-board.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which welcome names the place and includes everyone?",
+                "choices": [
+                  {
+                    "id": "answer",
+                    "textEN": "Welcome to Firefly Bend. Come join us!",
+                    "whyEN": "Come join us invites helpers and other visitors to the named gathering."
+                  },
+                  {
+                    "id": "distractor",
+                    "textEN": "Welcome to Firefly Bend. Helpers only.",
+                    "whyEN": "Helpers only excludes visitors who did not help, though the audience card welcomes them too."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "A mensagem deve receber só quem ajudou ou todos os visitantes?",
+                "retryPTBR": "Escolha a mensagem que dá boas-vindas aos ajudantes e aos demais visitantes.",
+                "responseEN": "Close the welcome panel. Malu crosses, raises the inclusive welcome board and joins gathering.c1.seat.08. Commit reward.c1-08 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você escolheu uma mensagem que recebe todos os visitantes.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              },
+              {
+                "id": "C1-08.s3.v02",
+                "origin": {
+                  "kind": "original",
+                  "storyboardBeatId": "C1-08-P4"
+                },
+                "noveltyEN": "Whether or not includes helpers and nonhelpers; provided makes helping a condition. Both choices name Firefly Bend.",
+                "vocabulary": [
+                  {
+                    "term": "whether or not",
+                    "role": "target",
+                    "support": "english_context"
+                  },
+                  {
+                    "term": "provided",
+                    "role": "target",
+                    "support": "english_context"
+                  }
+                ],
+                "overlay": {},
+                "clues": [
+                  {
+                    "id": "C1-08.s3.v02.clue",
+                    "kind": "compare",
+                    "requiredFacts": {
+                      "thanksReviewed": true,
+                      "thanksShown": true,
+                      "canLeave": false,
+                      "inspectionOpen": true,
+                      "inspectionStage": "welcome"
+                    },
+                    "captionEN": "The board is headed Firefly Bend. An audience picture shows helpers carrying tools and other visitors with empty hands entering the same gathering. Malu holds the board on the near bank; its empty stand is at Firefly Bend.",
+                    "accessibleEN": "The board is headed Firefly Bend. An audience picture shows helpers carrying tools and other visitors with empty hands entering the same gathering. Malu holds the board on the near bank; its empty stand is at Firefly Bend.",
+                    "closeup": "required",
+                    "refs": {
+                      "visualRefIds": [
+                        "c1.welcome-board.evidence"
+                      ],
+                      "anchorIds": [
+                        "clue.primary"
+                      ],
+                      "audioCueIds": []
+                    }
+                  }
+                ],
+                "promptEN": "Which welcome includes visitors even if they did not help?",
+                "choices": [
+                  {
+                    "id": "distractor",
+                    "textEN": "Welcome to Firefly Bend, provided you helped.",
+                    "whyEN": "Provided you helped makes helping a condition for receiving the welcome."
+                  },
+                  {
+                    "id": "answer",
+                    "textEN": "Welcome to Firefly Bend, whether or not you helped.",
+                    "whyEN": "Whether or not you helped includes visitors who helped and visitors who did not."
+                  }
+                ],
+                "answerMode": "single",
+                "acceptedChoiceIds": [
+                  "answer"
+                ],
+                "hintPTBR": "As duas frases citam Firefly Bend. Qual recebe também quem não ajudou?",
+                "retryPTBR": "Compare se a ajuda é uma condição em cada frase.",
+                "responseEN": "Close the welcome panel. Malu crosses, raises the inclusive welcome board and joins gathering.c1.seat.08. Commit reward.c1-08 once at logical landing on first clear; replay adds no arrival or reward.",
+                "confirmPTBR": "Você identificou que a ajuda não é uma condição para participar.",
+                "refs": {
+                  "visualRefIds": [],
+                  "anchorIds": [],
+                  "audioCueIds": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
