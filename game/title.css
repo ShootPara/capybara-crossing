@@ -1,0 +1,289 @@
+.picnic-title, .game-utility {
+  --picnic-ink: #21483b;
+  --picnic-action: #245442;
+  --picnic-cream: #faf2d9;
+  --picnic-rule: #856d3f;
+  --picnic-focus: #305c93;
+}
+
+.picnic-composition {
+  position: relative;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  min-height: 330px;
+  aspect-ratio: 1.95;
+  padding: 24px 4%;
+  isolation: isolate;
+  container-type: inline-size;
+  box-sizing: border-box;
+}
+
+.picnic-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #d9ae62;
+}
+
+.picnic-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.picnic-pennants {
+  position: absolute;
+  inset: 12px auto auto -1%;
+  display: flex;
+  align-items: flex-start;
+  width: 53%;
+  padding: 0 2%;
+  border-top: 2px solid #695b38;
+  transform: rotate(-2deg);
+  transform-origin: left top;
+}
+
+.picnic-pennants span {
+  flex: 1 1 0;
+  height: clamp(22px, 4.3vw, 62px);
+  background: #ba6b4c;
+  clip-path: polygon(0 0, 100% 0, 57% 100%);
+}
+
+.picnic-pennants span:nth-child(3n+2) { background: #d3a248; }
+.picnic-pennants span:nth-child(3n+3) { background: #477d78; }
+.picnic-pennants span:nth-child(even) { height: clamp(17px, 3.6vw, 52px); }
+
+.picnic-invitation {
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 54%;
+  padding: clamp(20px, 3.4cqw, 38px);
+  border: 1px solid var(--picnic-rule);
+  border-radius: 4px 24px 4px 24px;
+  background: linear-gradient(130deg, #fff9e6, var(--picnic-cream));
+  color: var(--picnic-ink);
+  box-shadow: 4px 7px 0 #4b46283d;
+}
+
+.picnic-invitation::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid #a89058;
+  border-radius: 2px 19px 2px 19px;
+  pointer-events: none;
+}
+
+.picnic-emblem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  color: var(--picnic-rule);
+  margin-bottom: 8px;
+}
+
+.picnic-emblem::before, .picnic-emblem::after {
+  content: '';
+  width: 28px;
+  border-top: 1px solid;
+}
+
+.picnic-emblem svg {
+  width: 20px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.picnic-invitation #title-heading {
+  margin: 0 0 12px;
+  font: bold min(clamp(1.8rem, 6.3cqw, 3.55rem), 8.2cqw)/.99 Georgia, serif;
+  letter-spacing: -.045em;
+  overflow-wrap: anywhere;
+}
+
+.picnic-invitation #title-heading span { display: block; }
+.picnic-invitation #title-heading em { font-weight: 400; }
+.picnic-invitation #title-progress { margin: 0 0 12px; }
+.picnic-invitation #title-progress:empty, .picnic-title .picnic-replay:empty { display: none; }
+
+.picnic-invitation .picnic-play, .picnic-invitation .picnic-restore,
+.game-utility .utility-album {
+  box-sizing: border-box;
+  min-height: 44px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.picnic-invitation .picnic-play {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 44px;
+  padding: 8px 16px;
+  border: 1px solid #174333;
+  background: var(--picnic-action);
+  color: #fffaf0;
+  font-weight: 700;
+}
+
+.picnic-invitation .picnic-play::after {
+  content: '';
+  flex: 0 0 18px;
+  height: 18px;
+  background: currentColor;
+  clip-path: polygon(0 45%, 80% 45%, 56% 21%, 64% 13%, 100% 50%, 64% 87%, 56% 79%, 80% 55%, 0 55%);
+}
+
+.picnic-invitation .picnic-play:hover { background: #193d31; }
+
+.picnic-invitation .picnic-restore {
+  padding: 5px 0;
+  border: 0;
+  background: transparent;
+  color: var(--picnic-ink);
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.picnic-invitation .picnic-restore:hover { text-decoration-thickness: 2px; }
+.picnic-title .picnic-replay { margin-top: 12px; }
+
+.game-utility {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  color: var(--picnic-ink);
+}
+
+.game-utility .utility-album {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 44px;
+  max-width: 100%;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--picnic-ink);
+  font-weight: 700;
+  text-align: left;
+}
+
+.game-utility .utility-album span { overflow-wrap: anywhere; }
+
+.game-utility .utility-sound { display: flex; flex: none; gap: 8px; }
+
+.game-utility .utility-toggle {
+  position: relative;
+  display: grid;
+  width: 44px;
+  height: 44px;
+}
+
+.game-utility .utility-toggle input {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.game-utility .utility-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 1px solid #72806b;
+  border-radius: 12px;
+  background: #f7f5e9;
+}
+
+.game-utility svg {
+  flex: none;
+  width: 23px;
+  height: 23px;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.game-utility .utility-icon::after {
+  content: '';
+  position: absolute;
+  inset: auto;
+  display: none;
+  width: 28px;
+  height: 2px;
+  background: currentColor;
+  outline: 1px solid #f7f5e9;
+  transform: rotate(-45deg);
+}
+
+.game-utility input:not(:checked) + .utility-icon::after { display: block; }
+
+.game-utility .utility-album:hover,
+.game-utility .utility-toggle:hover .utility-icon { background: #e2ead7; }
+
+.picnic-invitation button:focus-visible, .picnic-invitation #title-heading:focus-visible,
+.game-utility .utility-album:focus-visible, .game-utility input:focus-visible + .utility-icon {
+  outline: 3px solid var(--picnic-focus);
+  outline-offset: 3px;
+}
+
+@media (forced-colors: active) {
+  .game-utility .utility-icon::after {
+    forced-color-adjust: none;
+    background: CanvasText;
+    outline-color: Canvas;
+  }
+  .game-utility .utility-album { border-color: ButtonText; }
+}
+
+@media (max-width: 620px) {
+  .picnic-composition {
+    min-height: 0;
+    aspect-ratio: auto;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .picnic-art {
+    position: relative;
+    z-index: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .picnic-invitation {
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+  }
+
+  .picnic-invitation #title-heading {
+    font-size: min(clamp(1.8rem, 9.7cqw, 3.25rem), 15.25cqw);
+  }
+}
+
+@media (max-width: 220px) {
+  .game-utility { flex-wrap: wrap; }
+}

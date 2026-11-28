@@ -1,0 +1,254 @@
+#album-dialog {
+  --album-paper: #f9f4e7;
+  --album-ink: #442e1d;
+  --album-gold: #917143;
+  box-sizing: border-box;
+  width: min(calc(100% - 24px), 76rem);
+  max-width: none;
+  max-height: calc(100% - 24px);
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  margin: auto;
+  color: var(--album-ink);
+  background: var(--album-paper);
+  border: 1px solid #9a8868;
+  border-radius: 14px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+#album-dialog::backdrop {
+  background: rgb(25 43 33 / 67%);
+}
+
+#album-dialog .album-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4px 12px;
+  padding: 12px clamp(12px, 3vw, 24px) 8px;
+  background: var(--album-paper);
+  border-bottom: 1px solid #d9cbae;
+}
+
+#album-heading {
+  margin: 0;
+  color: #23493a;
+  font: bold clamp(1.35rem, 5.2vw, 2.2rem)/1.08 Georgia, serif;
+}
+
+#album-heading:focus-visible,
+#album-dialog .album-close:focus-visible {
+  outline: 3px solid #305c93;
+  outline-offset: 2px;
+}
+
+#album-dialog .album-count {
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: 0.875rem;
+}
+
+#album-dialog .album-close {
+  display: grid;
+  place-items: center;
+  grid-column: -2;
+  grid-row: 1;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  color: #23493a;
+  background: var(--album-paper);
+  border: 1px solid #657359;
+  border-radius: 12px;
+  font: normal 1.5rem/1 system-ui, sans-serif;
+}
+
+#album-dialog .album-close:hover {
+  background: #e7ebd9;
+}
+
+#album-dialog .album-collection {
+  padding: 0 clamp(12px, 3vw, 24px) 16px;
+}
+
+#album-dialog .album-suit {
+  margin: 12px 0 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+#album-dialog .album-suit h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid #c5b692;
+  padding-bottom: 4px;
+  font: bold 1.15rem/1.15 Georgia, serif;
+}
+
+#album-dialog .album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 7.25rem), 1fr));
+  gap: clamp(8px, 2vw, 12px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#album-dialog .album-grid li {
+  min-width: 0;
+}
+
+#album-dialog .album-card {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 5 / 7;
+  border: 1px solid #765732;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px #5a3a2725;
+}
+
+#album-dialog .album-card::before {
+  position: absolute;
+  z-index: -1;
+  inset: 4px;
+  content: '';
+  border: 3px double var(--album-gold);
+  border-radius: 5px;
+}
+
+#album-dialog .album-card-face {
+  background: radial-gradient(ellipse at 50% 43%, #fffbef 24%, #f2dfb5 100%);
+}
+
+#album-dialog .album-card-ace {
+  --album-gold: #83622d;
+  box-shadow: inset 0 0 0 2px #ba9658, 0 2px 4px #5a3a2725;
+}
+
+#album-dialog .album-card-index {
+  position: absolute;
+  inset: 12px auto auto 11px;
+  color: var(--album-ink);
+  font: bold 0.68rem/0.95 Georgia, serif;
+  text-align: center;
+}
+
+#album-dialog .album-card-index-reverse {
+  inset: auto 11px 12px auto;
+  transform: rotate(180deg);
+}
+
+#album-dialog .album-card-portrait {
+  position: absolute;
+  inset: 12% 4% auto;
+  display: block;
+  width: 92%;
+  height: 63%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+#album-dialog .album-card-caption {
+  position: absolute;
+  inset: 76% 18px 5%;
+  display: grid;
+  place-items: center;
+  font: bold 0.875rem/1 Georgia, serif;
+  text-align: center;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+#album-dialog .album-card-caption::before {
+  position: absolute;
+  top: -3px;
+  left: 35%;
+  width: 30%;
+  content: '';
+  border-top: 1px solid var(--album-gold);
+}
+
+#album-dialog .album-card-long-caption .album-card-portrait {
+  height: 52%;
+}
+
+#album-dialog .album-card-long-caption .album-card-caption {
+  inset-block-start: 66%;
+  line-height: 0.92;
+}
+
+#album-dialog .album-card-back {
+  --album-gold: #e6ca90;
+  display: grid;
+  place-items: center;
+  background-color: #79563b;
+  background-image:
+    repeating-linear-gradient(46deg, #e0bb7959 0 1px, transparent 1px 12px),
+    repeating-linear-gradient(-46deg, #e0bb7959 0 1px, transparent 1px 12px);
+}
+
+#album-dialog .album-card-medallion {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 46%;
+  aspect-ratio: 1;
+  background: #79563b;
+  border: 3px double var(--album-gold);
+  border-radius: 50%;
+}
+
+#album-dialog .album-card-medallion::before,
+#album-dialog .album-card-medallion::after {
+  box-sizing: border-box;
+  position: absolute;
+  inset: 34% 20% auto;
+  height: 27%;
+  content: '';
+  border: 2px solid var(--album-gold);
+  border-bottom: 0;
+  border-radius: 80% 80% 0 0;
+  background: linear-gradient(to right,
+    transparent 29%, var(--album-gold) 29% 35%, transparent 35% 64%,
+    var(--album-gold) 64% 70%, transparent 70%);
+}
+
+#album-dialog .album-card-medallion::after {
+  inset: 60% 23% auto;
+  height: 10%;
+  border: 0;
+  border-bottom: 2px solid var(--album-gold);
+  border-radius: 50%;
+  background: none;
+  transform: rotate(-7deg);
+}
+
+@media (min-width: 640px) {
+  #album-dialog .album-header {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+
+  #album-dialog .album-count {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #album-dialog {
+    width: min(calc(100% - 8px), 76rem);
+    max-height: calc(100% - 8px);
+    max-height: calc(100dvh - 8px);
+  }
+}

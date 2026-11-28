@@ -32,6 +32,8 @@ Start music only after user activation. Music and effects have separate controls
 
 ## Delivery and playback
 
+The note and speaker icons control the music and effects channels independently. The chapter loop ducks to 32% gain with a 50 ms attack during audible foreground cues, holds through the queue, and returns over 300 ms. [Sound controls and background-music ducking](../game/docs/title-and-cards.md#sound-icons-and-background-music-ducking)
+
 Keep hosting bandwidth and storage low for free-tier deployment.
 
 - Keep the original compressed exports with their cue IDs and source/license information in the production archive. The web build contains only the runtime MP3s.
